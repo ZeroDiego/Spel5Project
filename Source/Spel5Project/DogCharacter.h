@@ -46,5 +46,8 @@ private:
 	UPROPERTY(EditAnywhere)
 	float SleepDelay = 1;
 	
+	UPROPERTY(EditAnywhere)
+	USoundBase* BarkSound;
+	
 	FTimerHandle SleepTimer;
 };

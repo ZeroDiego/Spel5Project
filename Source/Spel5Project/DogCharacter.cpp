@@ -3,6 +3,8 @@
 
 #include "DogCharacter.h"
 
+#include "Kismet/GameplayStatics.h"
+
 // Sets default values
 ADogCharacter::ADogCharacter()
 {
@@ -45,6 +47,7 @@ void ADogCharacter::Sleep()
 void ADogCharacter::Alert()
 {
 	IsAlert = true;
+	UGameplayStatics::SpawnSoundAttached(BarkSound, GetMesh(), TEXT("Bark"));
 }
 
 
