@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "AIController.h"
+#include "DogCharacter.h"
 #include "DogAIController.generated.h"
 
 /**
@@ -16,7 +17,7 @@ class SPEL5PROJECT_API ADogAIController : public AAIController
 	
 public:
     void Tick(float DeltaTime) override;
-	bool IsEating() const;
+	void SetSatisfied() const;
 
 protected:
 	void BeginPlay() override;
@@ -24,4 +25,6 @@ protected:
 private:
 	UPROPERTY(EditAnywhere)
 	UBehaviorTree* AIBehavior;
+
+	ADogCharacter* DogCharacter;
 };

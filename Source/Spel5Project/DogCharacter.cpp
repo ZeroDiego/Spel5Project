@@ -34,9 +34,15 @@ void ADogCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCompon
 
 }
 
-bool ADogCharacter::IsEating() const
+bool ADogCharacter::GetIsSatisfied() const
 {
-	return true;
+	return IsSatisfied;
+}
+
+void ADogCharacter::SetSatisfied(bool NewIsSatisfied)
+{
+	UGameplayStatics::SpawnSoundAttached(EatSound, GetMesh(), TEXT("Eat"));
+	IsSatisfied = NewIsSatisfied;
 }
 
 void ADogCharacter::Sleep()
