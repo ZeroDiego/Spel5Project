@@ -2,7 +2,6 @@
 
 
 #include "DogAIController.h"
-#include "DogCharacter.h"
 #include "BehaviorTree/BlackboardComponent.h"
 #include "Kismet/GameplayStatics.h"
 
@@ -16,7 +15,8 @@ void ADogAIController::BeginPlay()
 
 		APawn* PlayerPawn = UGameplayStatics::GetPlayerPawn(GetWorld(), 0);
 		GetBlackboardComponent()->SetValueAsVector(TEXT("StartLocation"), GetPawn()->GetActorLocation());
-		
+		ADogCharacter* ControlledCharacter = Cast<ADogCharacter>(GetPawn());
+		GetBlackboardComponent()->SetValueAsBool(TEXT("IsSatisfied"), ControlledCharacter->GetIsSatisfied());
 	}
 }
 
@@ -25,12 +25,11 @@ void ADogAIController::Tick(float DeltaTime)
 	Super::Tick(DeltaTime);
 }
 
-bool ADogAIController::IsEating() const
+void ADogAIController::SetSatisfied() const
 {
 	ADogCharacter* ControlledCharacter = Cast<ADogCharacter>(GetPawn());
 	if (ControlledCharacter != nullptr)
 	{
-		return ControlledCharacter->IsEating();
+		ControlledCharacter->SetSatisfied(true);
 	}
-	return true;
 }

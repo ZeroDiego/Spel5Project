@@ -19,15 +19,13 @@ EBTNodeResult::Type UBTTask_Alert::ExecuteTask(UBehaviorTreeComponent& OwnerComp
 		return EBTNodeResult::Failed;
 	}
 
-	ADogCharacter* Character = Cast<ADogCharacter>(OwnerComp.GetAIOwner()->GetPawn());
-	if (Character == nullptr)
+	ADogCharacter* DogCharacter = Cast<ADogCharacter>(OwnerComp.GetAIOwner()->GetPawn());
+	if (DogCharacter == nullptr)
 	{
-		UE_LOG(LogTemp, Display, TEXT("EBTNodeResult::Failed"));
 		return EBTNodeResult::Failed;
 	}
 
-	Character->Alert();
+	DogCharacter->Alert();
 
-	UE_LOG(LogTemp, Display, TEXT("EBTNodeResult::Succeeded"));
 	return EBTNodeResult::Succeeded;
 }
