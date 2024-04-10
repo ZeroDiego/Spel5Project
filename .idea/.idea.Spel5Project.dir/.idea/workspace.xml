@@ -9,10 +9,6 @@
   <component name="ChangeListManager">
     <list default="true" id="d500ae7e-0468-4ab3-babc-87a8ecd34630" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Spel5Project.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Spel5Project.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/BP_Character.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/GM_GameMode.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Diego/Blueprints/BP_DiegoPlayerCharacter.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Diego/Blueprints/BP_DiegoPlayerCharacter.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/MovementMap.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/MovementMap.umap" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,6 +122,7 @@
       <workItem from="1712319452391" duration="13000" />
       <workItem from="1712659412808" duration="2666000" />
       <workItem from="1712681537378" duration="764000" />
+      <workItem from="1712748270252" duration="705000" />
     </task>
     <servers />
   </component>
