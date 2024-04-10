@@ -1,9 +1,7 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
-
-#include "DogCharacter.h"
 #include "BTService_IsSatisfied.h"
-
+#include "DogCharacter.h"
 #include "AIController.h"
 #include "BehaviorTree/BlackboardComponent.h"
 #include "Kismet/GameplayStatics.h"
