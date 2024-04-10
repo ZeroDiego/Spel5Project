@@ -9,6 +9,8 @@
   <component name="ChangeListManager">
     <list default="true" id="d500ae7e-0468-4ab3-babc-87a8ecd34630" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Spel5Project.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Spel5Project.dir/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Diego/Blueprints/BP_DiegoGameMode.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Diego/Blueprints/BP_DiegoGameMode.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Diego/Blueprints/BP_DiegoPlayerCharacter.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Diego/Blueprints/BP_DiegoPlayerCharacter.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Interactable/BP_Cube.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Interactable/BP_Cube.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/MovementMap.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/MovementMap.umap" afterDir="false" />
     </list>
@@ -130,6 +132,7 @@
       <workItem from="1712748270252" duration="705000" />
       <workItem from="1712761791742" duration="1743000" />
       <workItem from="1712775995116" duration="1347000" />
+      <workItem from="1712784231739" duration="815000" />
     </task>
     <servers />
   </component>
