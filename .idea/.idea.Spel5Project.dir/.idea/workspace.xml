@@ -20,6 +20,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="Blueprints" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 0
@@ -126,6 +129,7 @@
       <workItem from="1712681537378" duration="764000" />
       <workItem from="1712748270252" duration="705000" />
       <workItem from="1712761791742" duration="1743000" />
+      <workItem from="1712775995116" duration="1347000" />
     </task>
     <servers />
   </component>
