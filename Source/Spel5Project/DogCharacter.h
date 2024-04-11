@@ -20,8 +20,10 @@ protected:
 	virtual void BeginPlay() override;
 
 public:
-	UFUNCTION(BlueprintPure)
-	bool IsEating() const;
+
+	bool GetIsSatisfied() const;
+	
+	void SetSatisfied(bool IsSatisfied);
 	
 	void Sleep();
 
@@ -48,6 +50,9 @@ private:
 	
 	UPROPERTY(EditAnywhere)
 	USoundBase* BarkSound;
+
+	UPROPERTY(EditAnywhere)
+	USoundBase* EatSound;
 	
 	FTimerHandle SleepTimer;
 };
