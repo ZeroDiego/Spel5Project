@@ -2,8 +2,6 @@
 /shelf/
 /workspace.xml
 <<<<<<< HEAD
-=======
-<<<<<<< HEAD
 # Rider ignored files
 /modules.xml
 /projectSettingsUpdater.xml
@@ -15,7 +13,6 @@
 /dataSources/
 /dataSources.local.xml
 =======
->>>>>>> main
 
 # Rider ignored files
 /projectSettingsUpdater.xml
@@ -30,7 +27,4 @@
 /dataSources/
 /dataSources.local.xml
 
-<<<<<<< HEAD
-=======
->>>>>>> main
 >>>>>>> main
