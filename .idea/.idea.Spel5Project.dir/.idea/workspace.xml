@@ -11,9 +11,12 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Spel5Project.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Spel5Project.dir/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Interactable/BP_Cube.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Interactable/BP_Cube.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/ThirdPerson/Blueprints/BP_ThirdPersonCharacter.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/ThirdPerson/Blueprints/BP_ThirdPersonCharacter.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel/5/0U/DXGYZEPDRUPXNV5NQPTBSV.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel/5/0U/DXGYZEPDRUPXNV5NQPTBSV.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel/9/KI/KS7U71EUKD5P6U8D9QS3WY.uasset" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel/9/TR/E30IZM33B3A9JZYV1YJGS4.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel/9/TR/E30IZM33B3A9JZYV1YJGS4.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel/B/CV/YI02HCKZFCAAFUWSKCS516.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel/B/CV/YI02HCKZFCAAFUWSKCS516.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel/C/6G/ACHX22UTDZCAFT7FILQFYZ.uasset" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel/C/ZZ/P67CXHAMB00Q3IJZE4S0WP.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel/C/ZZ/P67CXHAMB00Q3IJZE4S0WP.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel/D/AE/U96T4DWV0JS7AJEWGRQV43.uasset" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -143,7 +146,6 @@
       <workItem from="1713267721302" duration="1344000" />
       <workItem from="1713270335343" duration="1019000" />
       <workItem from="1713288144877" duration="2874000" />
-      <workItem from="1713347463168" duration="704000" />
     </task>
     <servers />
   </component>
