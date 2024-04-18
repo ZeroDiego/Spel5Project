@@ -4,6 +4,8 @@
 #include "BTTask_Alert.h"
 #include "AIController.h"
 #include "DogCharacter.h"
+#include "OwnerCharacter.h"
+#include "Engine.h"
 
 UBTTask_Alert::UBTTask_Alert()
 {
@@ -26,6 +28,16 @@ EBTNodeResult::Type UBTTask_Alert::ExecuteTask(UBehaviorTreeComponent& OwnerComp
 	}
 
 	DogCharacter->Alert();
+
+	const UWorld* World = GetWorld();
+	for (TActorIterator<AOwnerCharacter> It(World); It; ++It)
+	{
+		if (const AOwnerCharacter* FoundOwner = *It)
+		{
+			FoundOwner->KillPlayer();
+			break;
+		}
+	}
 
 	return EBTNodeResult::Succeeded;
 }

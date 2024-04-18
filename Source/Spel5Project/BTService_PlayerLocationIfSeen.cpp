@@ -3,6 +3,7 @@
 
 #include "BTService_PlayerLocationIfSeen.h"
 #include "AIController.h"
+#include "DogAIController.h"
 #include "Kismet/GameplayStatics.h"
 #include "BehaviorTree/BlackboardComponent.h"
 
@@ -26,8 +27,12 @@ void UBTService_PlayerLocationIfSeen::TickNode(UBehaviorTreeComponent& OwnerComp
 	{
 		return;
 	}
+
+	ADogAIController* DogAIController = Cast<ADogAIController>(OwnerComp.GetOwner());
+
+	const float DistanceToPlayer = FVector::Distance(PlayerPawn->GetActorLocation(), OwnerComp.GetAIOwner()->GetPawn()->GetActorLocation());
 	
-	if (OwnerComp.GetAIOwner()->LineOfSightTo(PlayerPawn))
+	if (OwnerComp.GetAIOwner()->LineOfSightTo(PlayerPawn) && DistanceToPlayer <= DogAIController->GetVisionRange())
 	{
 		OwnerComp.GetBlackboardComponent()->SetValueAsObject(GetSelectedBlackboardKey(), PlayerPawn);
 	}

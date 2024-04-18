@@ -39,7 +39,7 @@ bool ADogCharacter::GetIsSatisfied() const
 	return IsSatisfied;
 }
 
-void ADogCharacter::SetSatisfied(bool NewIsSatisfied)
+void ADogCharacter::SetSatisfied(const bool NewIsSatisfied)
 {
 	UGameplayStatics::SpawnSoundAttached(EatSound, GetMesh(), TEXT("Eat"));
 	IsSatisfied = NewIsSatisfied;

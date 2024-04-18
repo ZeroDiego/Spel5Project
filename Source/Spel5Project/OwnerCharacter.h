@@ -4,54 +4,35 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
-#include "DogCharacter.generated.h"
+#include "OwnerCharacter.generated.h"
 
 UCLASS()
-class SPEL5PROJECT_API ADogCharacter : public ACharacter
+class SPEL5PROJECT_API AOwnerCharacter : public ACharacter
 {
 	GENERATED_BODY()
 
 public:
 	// Sets default values for this character's properties
-	ADogCharacter();
+	AOwnerCharacter();
 
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
 public:
-	bool GetIsSatisfied() const;
-	
-	void SetSatisfied(bool NewIsSatisfied);
-	
-	void Sleep();
+	bool GetIsAlerted() const;
 
-	void Alert();
+	void SetIsAlerted(bool NewIsAlerted);
+
+	void KillPlayer() const;
 	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
-	
+
 private:
 	UPROPERTY(VisibleAnywhere)
-	bool IsSatisfied;
-
-	UPROPERTY(VisibleAnywhere)
-	bool IsSleeping;
-
-	UPROPERTY(VisibleAnywhere)
-	bool IsAlert;
-	
-	UPROPERTY(EditAnywhere)
-	float SleepDelay = 1;
-	
-	UPROPERTY(EditAnywhere)
-	USoundBase* BarkSound;
-
-	UPROPERTY(EditAnywhere)
-	USoundBase* EatSound;
-	
-	FTimerHandle SleepTimer;
+	bool IsAlerted;
 };
