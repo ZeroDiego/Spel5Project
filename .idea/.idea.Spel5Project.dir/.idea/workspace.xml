@@ -8,11 +8,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d500ae7e-0468-4ab3-babc-87a8ecd34630" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Spel5Project.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Spel5Project.dir/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Diego/Levels/DiegoJacobLevel.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Diego/Levels/DiegoJacobLevel.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel/0/IG/1BY34HJLJTD1VTKRR37KTM.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel/0/IG/1BY34HJLJTD1VTKRR37KTM.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel/4/JS/2G4HX2854KCQQ16UUEIXFT.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel/4/JS/2G4HX2854KCQQ16UUEIXFT.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel/9/TR/E30IZM33B3A9JZYV1YJGS4.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel/9/TR/E30IZM33B3A9JZYV1YJGS4.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Erik/OwnerAi.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Erik/OwnerAi.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel/0/72/1QOBBJ23VDUXXXIU1KNPBQ.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel/0/72/1QOBBJ23VDUXXXIU1KNPBQ.uasset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -153,7 +151,7 @@
       <workItem from="1713267721302" duration="1344000" />
       <workItem from="1713270335343" duration="1019000" />
       <workItem from="1713288144877" duration="2874000" />
-      <workItem from="1713347726068" duration="3486000" />
+      <workItem from="1713347726068" duration="5288000" />
     </task>
     <servers />
   </component>
