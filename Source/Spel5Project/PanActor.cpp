@@ -3,7 +3,7 @@
 
 #include "PanActor.h"
 
-#include "AI_Mean_Owner.h"
+#include "AI_Owner.h"
 #include "PoisonActor.h"
 #include "Components/BoxComponent.h"
 #include "Engine/Engine.h"
@@ -51,7 +51,7 @@ void APanActor::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* Othe
 		isPoisoned = true;
 		OtherActor->Destroy();
 	}
-	if (OtherActor->IsA(AAI_Mean_Owner::StaticClass()) && isPoisoned == true)
+	if (OtherActor->IsA(AAI_Owner::StaticClass()) && isPoisoned == true)
 	{
 		GEngine->AddOnScreenDebugMessage(-1, 1.f, FColor::Yellow, "Overlap Begin with Poison Object");
 		bIsOverlapping = true;
