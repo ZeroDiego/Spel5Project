@@ -2,6 +2,8 @@
 
 
 #include "PanActor.h"
+
+#include "AI_Mean_Owner.h"
 #include "PoisonActor.h"
 #include "Components/BoxComponent.h"
 #include "Engine/Engine.h"
@@ -21,6 +23,7 @@ APanActor::APanActor()
 	CollisionBox->OnComponentEndOverlap.AddDynamic(this, &APanActor::OnOverlapEnd);
 
 	bIsOverlapping = false;
+	isPoisoned = false;
 
 }
 
@@ -48,6 +51,12 @@ void APanActor::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* Othe
 		isPoisoned = true;
 		OtherActor->Destroy();
 	}
+	if (OtherActor->IsA(AAI_Mean_Owner::StaticClass()) && isPoisoned == true)
+	{
+		GEngine->AddOnScreenDebugMessage(-1, 1.f, FColor::Yellow, "Overlap Begin with Poison Object");
+		bIsOverlapping = true;
+		OtherActor->Destroy();
+	}
 }
 
 void APanActor::OnOverlapEnd(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp,
@@ -57,7 +66,6 @@ void APanActor::OnOverlapEnd(UPrimitiveComponent* OverlappedComp, AActor* OtherA
 	{
 		GEngine->AddOnScreenDebugMessage(-1, 1.f, FColor::Red, "Overlap End with Poison Object");
 		bIsOverlapping = false;
-		isPoisoned = false;
 	}
 }
 
