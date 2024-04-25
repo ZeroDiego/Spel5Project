@@ -8,33 +8,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d500ae7e-0468-4ab3-babc-87a8ecd34630" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Content/Diego/AI/BB_OwnerAI.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/Diego/AI/BT_OwnerAI.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/Diego/Blueprints/BP_Owner.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/Diego/Blueprints/BP_OwnerCharacter.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/Spel5Project/BTTask_KillPlayer.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/Spel5Project/BTTask_KillPlayer.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/Spel5Project/OwnerAIController.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/Spel5Project/OwnerAIController.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/Spel5Project/OwnerCharacter.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/Spel5Project/OwnerCharacter.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/Spel5Project/OwnerComponent.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/Spel5Project/OwnerComponent.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Spel5Project.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Spel5Project.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Diego/AI/BP_DogAIController.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Diego/AI/BP_DogAIController.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Diego/AI/BT_DogAI.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Diego/AI/BT_DogAI.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Diego/Blueprints/BP_DiegoGameMode.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Diego/Blueprints/BP_DiegoGameMode.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Diego/Blueprints/BP_DiegoPlayerCharacter.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Diego/Blueprints/BP_DiegoPlayerCharacter.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Diego/Blueprints/BP_DogCharacter.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Diego/Blueprints/BP_DogCharacter.uasset" afterDir="false" />
+<<<<<<< HEAD
+      <change beforePath="$PROJECT_DIR$/Content/Diego/Levels/DiegoJacobLevel.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Diego/Levels/DiegoJacobLevel.umap" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Erik/OwnerAi.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Erik/OwnerAi.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel/9/TR/E30IZM33B3A9JZYV1YJGS4.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel/9/TR/E30IZM33B3A9JZYV1YJGS4.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel/C/V6/E77AC1MOMMRVCNLQP4S733.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel/C/V6/E77AC1MOMMRVCNLQP4S733.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Spel5Project/BTService_PlayerLocationIfSeen.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Spel5Project/BTService_PlayerLocationIfSeen.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Spel5Project/BTTask_Alert.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Spel5Project/BTTask_Alert.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Spel5Project/DogAIController.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Spel5Project/DogAIController.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Spel5Project/DogAIController.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Spel5Project/DogAIController.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Spel5Project/DogCharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Spel5Project/DogCharacter.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Spel5Project/DogCharacter.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Spel5Project/DogCharacter.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel/0/72/1QOBBJ23VDUXXXIU1KNPBQ.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel/0/72/1QOBBJ23VDUXXXIU1KNPBQ.uasset" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Spel5Project.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Spel5Project.dir/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Interactable/BP_Cube.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Interactable/BP_Cube.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/ThirdPerson/Blueprints/BP_ThirdPersonCharacter.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/ThirdPerson/Blueprints/BP_ThirdPersonCharacter.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel/C/ZZ/P67CXHAMB00Q3IJZE4S0WP.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel/C/ZZ/P67CXHAMB00Q3IJZE4S0WP.uasset" afterDir="false" />
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of f276579 (Push/Pull update)
+=======
+>>>>>>> parent of f276579 (Push/Pull update)
+=======
+>>>>>>> parent of f276579 (Push/Pull update)
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,21 +41,16 @@
   &quot;associatedIndex&quot;: 0
 }</component>
   <component name="ProjectId" id="2egHhosQzRAFaitt0yvplkSQlu5" />
-  <component name="ProjectLevelVcsManager">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "Uproject.Spel5Project.executor": "Run",
-    "git-widget-placeholder": "diego",
-    "ignore.virus.scanning.warn.message": "true",
+    "git-widget-placeholder": "lileik",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -76,70 +60,81 @@
   },
   "keyToStringList": {
     "rider.external.source.directories": [
-      "C:\\Users\\DIEGO\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\DecompilerCache",
-      "C:\\Users\\DIEGO\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\SourcesCache",
-      "C:\\Users\\DIEGO\\AppData\\Local\\Symbols\\src"
+      "C:\\Users\\Theka\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache",
+      "C:\\Users\\Theka\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache",
+      "C:\\Users\\Theka\\AppData\\Local\\Symbols\\src"
     ]
   }
 }]]></component>
   <component name="RunManager">
     <configuration name="Spel5Project" type="Uproject" factoryName="rider.uproject">
-      <option name="PROJECT_FILE_PATH" value="$PROJECT_DIR$/Spel5Project.uproject" />
-      <configuration_2>
+      <configuration_1>
         <option name="CONFIGURATION" value="DebugGame" />
         <option name="PLATFORM" value="Win64" />
-        <option name="EXECUTABLE_PATH" value="E:\GitHub\Spel5Project\Binaries\Win64\Spel5Project-Win64-DebugGame.exe" />
-        <option name="WORKING_DIRECTORY" value="E:\UE_5.3" />
+        <option name="PROJECT_FILE_PATH" value="$PROJECT_DIR$/Spel5Project.uproject" />
+        <option name="CURRENT_LAUNCH_PROFILE" value="Local" />
+        <option name="EXECUTABLE_PATH" value="C:\github\Spel5Project\Binaries\Win64\Spel5Project-Win64-DebugGame.exe" />
         <option name="MANDATORY_PROGRAM_PARAMETERS" value="" />
         <option name="CUSTOM_PROGRAM_PARAMETERS" value="" />
+        <option name="WORKING_DIRECTORY" value="C:\Unreal\UE_5.3" />
+        <option name="PASS_PARENT_ENVS" value="1" />
+        <option name="USE_EXTERNAL_CONSOLE" value="0" />
+        <option name="TERMINAL_INTERACTION_BEHAVIOR" value="FORCE_CONSOLE" />
+      </configuration_1>
+      <configuration_2>
+        <option name="CONFIGURATION" value="Development" />
+        <option name="PLATFORM" value="Win64" />
+        <option name="PROJECT_FILE_PATH" value="$PROJECT_DIR$/Spel5Project.uproject" />
+        <option name="CURRENT_LAUNCH_PROFILE" value="Local" />
+        <option name="EXECUTABLE_PATH" value="C:\github\Spel5Project\Binaries\Win64\Spel5Project.exe" />
+        <option name="MANDATORY_PROGRAM_PARAMETERS" value="" />
+        <option name="CUSTOM_PROGRAM_PARAMETERS" value="" />
+        <option name="WORKING_DIRECTORY" value="C:\Unreal\UE_5.3" />
         <option name="PASS_PARENT_ENVS" value="1" />
         <option name="USE_EXTERNAL_CONSOLE" value="0" />
         <option name="TERMINAL_INTERACTION_BEHAVIOR" value="FORCE_CONSOLE" />
       </configuration_2>
       <configuration_3>
-        <option name="CONFIGURATION" value="Development" />
+        <option name="CONFIGURATION" value="Shipping" />
         <option name="PLATFORM" value="Win64" />
-        <option name="EXECUTABLE_PATH" value="E:\GitHub\Spel5Project\Binaries\Win64\Spel5Project.exe" />
-        <option name="WORKING_DIRECTORY" value="E:\UE_5.3" />
+        <option name="PROJECT_FILE_PATH" value="$PROJECT_DIR$/Spel5Project.uproject" />
+        <option name="CURRENT_LAUNCH_PROFILE" value="Local" />
+        <option name="EXECUTABLE_PATH" value="C:\github\Spel5Project\Binaries\Win64\Spel5Project-Win64-Shipping.exe" />
         <option name="MANDATORY_PROGRAM_PARAMETERS" value="" />
         <option name="CUSTOM_PROGRAM_PARAMETERS" value="" />
+        <option name="WORKING_DIRECTORY" value="C:\Unreal\UE_5.3" />
         <option name="PASS_PARENT_ENVS" value="1" />
         <option name="USE_EXTERNAL_CONSOLE" value="0" />
         <option name="TERMINAL_INTERACTION_BEHAVIOR" value="FORCE_CONSOLE" />
       </configuration_3>
       <configuration_4>
-        <option name="CONFIGURATION" value="Shipping" />
+        <option name="CONFIGURATION" value="DebugGame Editor" />
         <option name="PLATFORM" value="Win64" />
-        <option name="EXECUTABLE_PATH" value="E:\GitHub\Spel5Project\Binaries\Win64\Spel5Project-Win64-Shipping.exe" />
-        <option name="WORKING_DIRECTORY" value="E:\UE_5.3" />
-        <option name="MANDATORY_PROGRAM_PARAMETERS" value="" />
+        <option name="PROJECT_FILE_PATH" value="$PROJECT_DIR$/Spel5Project.uproject" />
+        <option name="CURRENT_LAUNCH_PROFILE" value="Local" />
+        <option name="EXECUTABLE_PATH" value="C:\Unreal\UE_5.3\Engine\Binaries\Win64\UnrealEditor-Win64-DebugGame.exe" />
+        <option name="MANDATORY_PROGRAM_PARAMETERS" value=" &quot;C:\github\Spel5Project\Spel5Project.uproject&quot;" />
         <option name="CUSTOM_PROGRAM_PARAMETERS" value="" />
+        <option name="WORKING_DIRECTORY" value="C:\Unreal\UE_5.3" />
         <option name="PASS_PARENT_ENVS" value="1" />
         <option name="USE_EXTERNAL_CONSOLE" value="0" />
         <option name="TERMINAL_INTERACTION_BEHAVIOR" value="FORCE_CONSOLE" />
       </configuration_4>
       <configuration_5>
-        <option name="CONFIGURATION" value="DebugGame Editor" />
+        <option name="CONFIGURATION" value="Development Editor" />
         <option name="PLATFORM" value="Win64" />
-        <option name="EXECUTABLE_PATH" value="E:\UE_5.3\Engine\Binaries\Win64\UnrealEditor-Win64-DebugGame.exe" />
-        <option name="WORKING_DIRECTORY" value="E:\UE_5.3" />
-        <option name="MANDATORY_PROGRAM_PARAMETERS" value=" &quot;E:\GitHub\Spel5Project\Spel5Project.uproject&quot;" />
+        <option name="PROJECT_FILE_PATH" value="$PROJECT_DIR$/Spel5Project.uproject" />
+        <option name="CURRENT_LAUNCH_PROFILE" value="Local" />
+        <option name="EXECUTABLE_PATH" value="C:\Unreal\UE_5.3\Engine\Binaries\Win64\UnrealEditor.exe" />
+        <option name="MANDATORY_PROGRAM_PARAMETERS" value=" &quot;C:\github\Spel5Project\Spel5Project.uproject&quot;" />
         <option name="CUSTOM_PROGRAM_PARAMETERS" value="" />
+        <option name="WORKING_DIRECTORY" value="C:\Unreal\UE_5.3" />
         <option name="PASS_PARENT_ENVS" value="1" />
         <option name="USE_EXTERNAL_CONSOLE" value="0" />
         <option name="TERMINAL_INTERACTION_BEHAVIOR" value="FORCE_CONSOLE" />
       </configuration_5>
-      <configuration_6>
-        <option name="CONFIGURATION" value="Development Editor" />
-        <option name="PLATFORM" value="Win64" />
-        <option name="EXECUTABLE_PATH" value="E:\UE_5.3\Engine\Binaries\Win64\UnrealEditor.exe" />
-        <option name="WORKING_DIRECTORY" value="E:\UE_5.3" />
-        <option name="MANDATORY_PROGRAM_PARAMETERS" value=" &quot;E:\GitHub\Spel5Project\Spel5Project.uproject&quot;" />
-        <option name="CUSTOM_PROGRAM_PARAMETERS" value="" />
-        <option name="PASS_PARENT_ENVS" value="1" />
-        <option name="USE_EXTERNAL_CONSOLE" value="0" />
-        <option name="TERMINAL_INTERACTION_BEHAVIOR" value="FORCE_CONSOLE" />
-      </configuration_6>
+      <option name="PROJECT_FILE_PATH" value="$PROJECT_DIR$/Spel5Project.uproject" />
+      <option name="AUTO_SELECT_PRIORITY" value="10010" />
       <method v="2">
         <option name="Build" />
       </method>
@@ -168,10 +163,17 @@
       <workItem from="1713198151001" duration="1365000" />
       <workItem from="1713267721302" duration="1344000" />
       <workItem from="1713270335343" duration="1019000" />
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
       <workItem from="1713288144877" duration="2874000" />
       <workItem from="1713347726068" duration="5288000" />
-      <workItem from="1713456177243" duration="960000" />
-      <workItem from="1713457175991" duration="12430000" />
+=======
+>>>>>>> parent of f276579 (Push/Pull update)
+=======
+>>>>>>> parent of f276579 (Push/Pull update)
+=======
+>>>>>>> parent of f276579 (Push/Pull update)
     </task>
     <servers />
   </component>
@@ -180,7 +182,6 @@
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="VcsManagerConfiguration">
-    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
 </project>
