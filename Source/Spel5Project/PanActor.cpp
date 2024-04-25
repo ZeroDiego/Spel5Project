@@ -51,12 +51,6 @@ void APanActor::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* Othe
 		isPoisoned = true;
 		OtherActor->Destroy();
 	}
-	if (OtherActor->IsA(AAI_Owner::StaticClass()) && isPoisoned == true)
-	{
-		GEngine->AddOnScreenDebugMessage(-1, 1.f, FColor::Yellow, "Overlap Begin with Poison Object");
-		bIsOverlapping = true;
-		OtherActor->Destroy();
-	}
 }
 
 void APanActor::OnOverlapEnd(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp,

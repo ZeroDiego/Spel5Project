@@ -35,5 +35,7 @@ public:
 	FORCEINLINE bool GetIsOverlapping() const { return bIsOverlapping; }
 	
 	bool bIsOverlapping;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite)
 	bool isPoisoned;
 };
