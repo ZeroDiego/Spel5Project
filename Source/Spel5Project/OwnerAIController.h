@@ -4,6 +4,8 @@
 
 #include "CoreMinimal.h"
 #include "AIController.h"
+#include "OwnerCharacter.h"
+#include "Perception/PawnSensingComponent.h"
 #include "OwnerAIController.generated.h"
 
 /**
@@ -16,7 +18,7 @@ class SPEL5PROJECT_API AOwnerAIController : public AAIController
 	
 public:
 	void Tick(float DeltaTime) override;
-	void SetAlerted(bool NewIsAlerted) const;
+	void SetAlerted() const;
 
 	float GetVisionRange() const;
 
@@ -29,4 +31,10 @@ private:
 
 	UPROPERTY(EditAnywhere)
 	float VisionRange;
+
+	UPROPERTY(VisibleAnywhere)
+	UPawnSensingComponent* PawnSensingComponent;
+
+	UFUNCTION()
+	void OnSeePlayer(APawn* SeenPawn);
 };

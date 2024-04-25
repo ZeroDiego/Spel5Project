@@ -32,9 +32,9 @@ EBTNodeResult::Type UBTTask_Alert::ExecuteTask(UBehaviorTreeComponent& OwnerComp
 	const UWorld* World = GetWorld();
 	for (TActorIterator<AOwnerCharacter> It(World); It; ++It)
 	{
-		if (const AOwnerCharacter* FoundOwner = *It)
+		if (AOwnerCharacter* FoundOwner = *It)
 		{
-			FoundOwner->KillPlayer();
+			FoundOwner->SetIsAlerted(true);
 			break;
 		}
 	}

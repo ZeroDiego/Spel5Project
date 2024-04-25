@@ -25,7 +25,8 @@ EBTNodeResult::Type UBTTask_KillPlayer::ExecuteTask(UBehaviorTreeComponent& Owne
 		return EBTNodeResult::Failed;
 	}
 
+	UE_LOG(LogTemp, Warning, TEXT("Hello"));
 	OwnerCharacter->KillPlayer();
-
+	
 	return EBTNodeResult::Succeeded;
 }

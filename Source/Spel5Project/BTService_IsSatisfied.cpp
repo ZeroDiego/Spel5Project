@@ -4,7 +4,6 @@
 #include "DogCharacter.h"
 #include "AIController.h"
 #include "BehaviorTree/BlackboardComponent.h"
-#include "Kismet/GameplayStatics.h"
 
 UBTService_IsSatisfied::UBTService_IsSatisfied()
 {
@@ -18,4 +17,3 @@ void UBTService_IsSatisfied::TickNode(UBehaviorTreeComponent& OwnerComp, uint8* 
 	ADogCharacter* ControlledCharacter = Cast<ADogCharacter>(OwnerComp.GetAIOwner()->GetPawn());
 	OwnerComp.GetBlackboardComponent()->SetValueAsBool(TEXT("IsSatisfied"), ControlledCharacter->GetIsSatisfied());
 }
-

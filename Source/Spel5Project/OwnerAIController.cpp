@@ -9,6 +9,12 @@ void AOwnerAIController::BeginPlay()
 {
 	Super::BeginPlay();
 
+	PawnSensingComponent = FindComponentByClass<UPawnSensingComponent>();
+	if (PawnSensingComponent)
+	{
+		PawnSensingComponent->OnSeePawn.AddDynamic(this, &AOwnerAIController::OnSeePlayer);
+	}
+
 	if(AIBehavior != nullptr)
 	{
 		RunBehaviorTree(AIBehavior);
@@ -23,12 +29,31 @@ void AOwnerAIController::Tick(float DeltaTime)
 	Super::Tick(DeltaTime);
 }
 
-void AOwnerAIController::SetAlerted(bool NewIsAlerted) const
+void AOwnerAIController::SetAlerted() const
 {
-
+	AOwnerCharacter* ControlledCharacter = Cast<AOwnerCharacter>(GetPawn());
+	if (ControlledCharacter != nullptr)
+	{
+		ControlledCharacter->SetIsAlerted(true);
+	}
 }
 
 float AOwnerAIController::GetVisionRange() const
 {
 	return VisionRange;
+}
+
+void AOwnerAIController::OnSeePlayer(APawn* SeenPawn)
+{
+	UE_LOG(LogTemp, Warning, TEXT("Hello"));
+	
+	if (SeenPawn && SeenPawn == UGameplayStatics::GetPlayerPawn(GetWorld(), 0))
+	{
+		UBlackboardComponent* BlackboardComp = GetBlackboardComponent();
+		if (BlackboardComp)
+		{
+			BlackboardComp->SetValueAsObject("Player", SeenPawn);
+			UE_LOG(LogTemp, Warning, TEXT("Hello"));
+		}
+	}
 }
