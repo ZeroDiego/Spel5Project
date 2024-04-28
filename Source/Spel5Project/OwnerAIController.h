@@ -4,13 +4,9 @@
 
 #include "CoreMinimal.h"
 #include "AIController.h"
-#include "OwnerCharacter.h"
 #include "Perception/PawnSensingComponent.h"
 #include "OwnerAIController.generated.h"
 
-/**
- * 
- */
 UCLASS()
 class SPEL5PROJECT_API AOwnerAIController : public AAIController
 {

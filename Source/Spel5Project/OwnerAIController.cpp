@@ -2,6 +2,7 @@
 
 
 #include "OwnerAIController.h"
+#include "OwnerCharacter.h"
 #include "BehaviorTree/BlackboardComponent.h"
 #include "Kismet/GameplayStatics.h"
 
