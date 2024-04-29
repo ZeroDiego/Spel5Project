@@ -9,6 +9,18 @@
   <component name="ChangeListManager">
     <list default="true" id="acdaa937-eda2-46c8-9ebf-42219eba813c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Spel5Project.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Spel5Project.dir/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Diego/AI/BB_OwnerAI.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Diego/AI/BB_OwnerAI.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Diego/AI/BT_DogAI.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Diego/AI/BT_DogAI.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Diego/AI/BT_OwnerAI.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Diego/AI/BT_OwnerAI.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Erik/OwnerAi.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Erik/OwnerAi.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Spel5Project/BTService_PlayerLocation.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Spel5Project/BTService_PlayerLocation.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Spel5Project/BTService_PlayerLocationIfSeen.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Spel5Project/BTService_PlayerLocationIfSeen.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Spel5Project/BTTask_Alert.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Spel5Project/BTTask_Alert.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Spel5Project/BTTask_ClearBlackboardValue.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Spel5Project/BTTask_ClearBlackboardValue.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Spel5Project/DogCharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Spel5Project/DogCharacter.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Spel5Project/DogCharacter.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Spel5Project/DogCharacter.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Spel5Project/OwnerCharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Spel5Project/OwnerCharacter.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Spel5Project/OwnerCharacter.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Spel5Project/OwnerCharacter.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +43,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Uproject.Spel5Project.executor": "Run",
     "git-widget-placeholder": "diego",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -119,7 +132,7 @@
       <option name="presentableId" value="Default" />
       <updated>1714116730724</updated>
       <workItem from="1714116732341" duration="2530000" />
-      <workItem from="1714324197567" duration="887000" />
+      <workItem from="1714324197567" duration="22910000" />
     </task>
     <servers />
   </component>

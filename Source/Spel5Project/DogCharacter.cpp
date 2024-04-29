@@ -55,5 +55,3 @@ void ADogCharacter::Alert()
 	IsAlert = true;
 	UGameplayStatics::SpawnSoundAttached(BarkSound, GetMesh(), TEXT("Bark"));
 }
-
-

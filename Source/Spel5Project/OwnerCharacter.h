@@ -23,6 +23,10 @@ public:
 	bool GetIsAlerted() const;
 
 	void SetIsAlerted(bool NewIsAlerted);
+	
+	FVector GetLastKnownPlayerLocation() const;
+
+	void SetLastKnownPlayerLocation(const FVector& NewLastKnownPlayerLocation);
 
 	void KillPlayer() const;
 	
@@ -35,4 +39,7 @@ public:
 private:
 	UPROPERTY(VisibleAnywhere)
 	bool IsAlerted;
+
+	UPROPERTY(VisibleAnywhere)
+	FVector LastKnownPlayerLocation;
 };

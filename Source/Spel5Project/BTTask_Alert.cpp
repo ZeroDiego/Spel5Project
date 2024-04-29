@@ -6,6 +6,9 @@
 #include "DogCharacter.h"
 #include "OwnerCharacter.h"
 #include "Engine.h"
+#include "OwnerAIController.h"
+#include "Logging/LogMacros.h"
+#include "BehaviorTree/BlackboardComponent.h"
 
 UBTTask_Alert::UBTTask_Alert()
 {
@@ -35,9 +38,10 @@ EBTNodeResult::Type UBTTask_Alert::ExecuteTask(UBehaviorTreeComponent& OwnerComp
 		if (AOwnerCharacter* FoundOwner = *It)
 		{
 			FoundOwner->SetIsAlerted(true);
+			FoundOwner->SetLastKnownPlayerLocation(OwnerComp.GetBlackboardComponent()->GetValueAsVector("LastKnownPlayerLocation"));
 			break;
 		}
 	}
-
+	
 	return EBTNodeResult::Succeeded;
 }

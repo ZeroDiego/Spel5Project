@@ -43,6 +43,16 @@ void AOwnerCharacter::SetIsAlerted(const bool NewIsAlerted)
 	IsAlerted = NewIsAlerted;
 }
 
+FVector AOwnerCharacter::GetLastKnownPlayerLocation() const
+{
+	return LastKnownPlayerLocation;
+}
+
+void AOwnerCharacter::SetLastKnownPlayerLocation(const FVector& NewLastKnownPlayerLocation)
+{
+	LastKnownPlayerLocation = NewLastKnownPlayerLocation;
+}
+
 void AOwnerCharacter::KillPlayer() const
 {
 	UGameplayStatics::OpenLevel(GetWorld(), FName("DiegoJacobLevel"), true);
