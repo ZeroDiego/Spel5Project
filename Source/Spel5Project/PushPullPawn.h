@@ -25,6 +25,7 @@ public:
 
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
+	
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadWrite)
 	class UBoxComponent * CollisionBox;
@@ -39,4 +40,12 @@ public:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	bool bIsOverlapping;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	ACharacter* PlayerCharacter;
+
+	UFUNCTION()
+	void OnKeyDown(FKey Key);
+	void MoveForward(float Value);
+	void MoveRight(float Value);
 };
