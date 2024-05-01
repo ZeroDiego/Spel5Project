@@ -20,12 +20,6 @@ APushPullPawn::APushPullPawn()
 
     bIsOverlapping = false;
     PlayerCharacter = nullptr;
-
-    // Initialize the InputComponent if it's not already set
-    if (!InputComponent) {
-        InputComponent = CreateDefaultSubobject<UInputComponent>(TEXT("InputComponent"));
-        RootComponent = InputComponent;
-    }
 }
 
 // Called when the game starts or when spawned
@@ -51,6 +45,7 @@ void APushPullPawn::Tick(float DeltaTime)
 void APushPullPawn::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 {
     Super::SetupPlayerInputComponent(PlayerInputComponent);
+    UE_LOG(LogTemp, Warning, TEXT("Setting up input component"));
     PlayerInputComponent->BindKey(EKeys::LeftMouseButton, IE_Pressed, this, &APushPullPawn::OnKeyDown);
 }
 
