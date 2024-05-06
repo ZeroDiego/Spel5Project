@@ -7,31 +7,40 @@
 
 class UPhysicsConstraintComponent;
 class UPhysicsHandleComponent;
+class UInputComponent;
 
 UCLASS()
 class SPEL5PROJECT_API APushPullActor : public AActor
 {
 	GENERATED_BODY()
-    
+
 public:
 	APushPullActor();
-	void SetupPlayerInputComponent(UInputComponent* PlayerInputComponent);
 
-	UPROPERTY(EditAnywhere, Category="Environment")
-	UStaticMeshComponent* MeshComponent;
+	virtual void BeginPlay() override;
 
-	UPROPERTY(EditAnywhere, Category="Environment")
-	UPhysicsConstraintComponent* PhysicsComponent;
+	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent);
 
-	UPROPERTY(EditAnywhere, Category="Environment")
-	UPhysicsHandleComponent* PhysicsHandleComponent;
-	
+	// Updated method signatures to match the new input handling approach
+	void OnPullObjectPressed();
+	void OnReleaseObjectReleased();
 
-	void PullObject(const FVector& PlayerLocation);
+	// Existing methods
+	void PullObject();
 	void ReleaseObject();
 
-	UPROPERTY(EditAnywhere, Category = "Player")
-	TSubclassOf<AActor> PlayerBlueprintClass;
+	// Method to set the player blueprint class from the blueprint editor
+	void SetPlayerBlueprintClass(TSubclassOf<ACharacter> NewPlayerBlueprintClass);
+
+	// Properties
+	UPROPERTY(EditAnywhere, Category = "Environment")
+	UStaticMeshComponent* MeshComponent;
+
+	UPROPERTY(EditAnywhere, Category = "Environment")
+	UPhysicsConstraintComponent* PhysicsComponent;
+
+	UPROPERTY(EditAnywhere, Category = "Environment")
+	UPhysicsHandleComponent* PhysicsHandleComponent;
 
 protected:
 	virtual void Tick(float DeltaTime) override;
@@ -39,4 +48,5 @@ protected:
 private:
 	bool bIsGrabbed = false;
 	FVector GrabLocation;
+	TSubclassOf<AActor> PlayerBlueprintClass;
 };

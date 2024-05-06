@@ -5,88 +5,85 @@
 #include "Components/StaticMeshComponent.h"
 #include "PhysicsEngine/PhysicsHandleComponent.h"
 
-
 APushPullActor::APushPullActor()
 {
-	MeshComponent = CreateDefaultSubobject<UStaticMeshComponent>("MeshComponent");
-	MeshComponent->SetSimulatePhysics(true);
-	MeshComponent->SetLinearDamping(2.f);
-	SetRootComponent(MeshComponent);
+    PrimaryActorTick.bCanEverTick = true;
 
-	PhysicsComponent = CreateDefaultSubobject<UPhysicsConstraintComponent>("PhysicsComponent");
-	PhysicsComponent->SetLinearXLimit(LCM_Free, 0.f);
-	PhysicsComponent->SetLinearYLimit(LCM_Free, 0.f);
-	PhysicsComponent->SetAngularSwing1Limit(ACM_Locked, 0.f);
-	PhysicsComponent->SetAngularSwing2Limit(ACM_Locked, 0.f);
-	PhysicsComponent->SetAngularTwistLimit(ACM_Locked, 0.f);
-	FConstrainComponentPropName ComponentPropName;
-	ComponentPropName.ComponentName = "MeshComponent";
-	PhysicsComponent->ComponentName1 = ComponentPropName;
-	PhysicsComponent->SetupAttachment(MeshComponent);
+    MeshComponent = CreateDefaultSubobject<UStaticMeshComponent>("MeshComponent");
+    MeshComponent->SetSimulatePhysics(true);
+    MeshComponent->SetLinearDamping(2.f);
+    SetRootComponent(MeshComponent);
 
-	PhysicsHandleComponent = CreateDefaultSubobject<UPhysicsHandleComponent>("PhysicsHandleComponent");
+    PhysicsComponent = CreateDefaultSubobject<UPhysicsConstraintComponent>("PhysicsComponent");
+    PhysicsComponent->SetLinearXLimit(LCM_Free, 0.f);
+    PhysicsComponent->SetLinearYLimit(LCM_Free, 0.f);
+    PhysicsComponent->SetAngularSwing1Limit(ACM_Locked, 0.f);
+    PhysicsComponent->SetAngularSwing2Limit(ACM_Locked, 0.f);
+    PhysicsComponent->SetAngularTwistLimit(ACM_Locked, 0.f);
+    FConstrainComponentPropName ComponentPropName;
+    ComponentPropName.ComponentName = "MeshComponent";
+    PhysicsComponent->ComponentName1 = ComponentPropName;
+    PhysicsComponent->SetupAttachment(MeshComponent);
 
-	Tags.Add("movable");
-	
+    PhysicsHandleComponent = CreateDefaultSubobject<UPhysicsHandleComponent>("PhysicsHandleComponent");
 
+    Tags.Add("movable");
 }
 
 void APushPullActor::BeginPlay()
 {
-	Super::BeginPlay();
-
-	// Setup input component here
-	SetupPlayerInputComponent(this->CreateDefaultSubobject<UInputComponent>(TEXT("InputComponent")));
+    Super::BeginPlay();
 }
 
 void APushPullActor::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 {
-	Super::SetupPlayerInputComponent(PlayerInputComponent);
+    // Bind actions to the actor's methods
+    // Bind the PullObject action to the left mouse button press
+    PlayerInputComponent->BindAction("PullObjectAction", IE_Pressed, this, &APushPullActor::OnPullObjectPressed);
 
-	// Bind the PullObject action to the left mouse button press
-	PlayerInputComponent->BindAction("PullObjectAction", IE_Pressed, this, &APushPullActor::PullObject);
-
-	// Bind the ReleaseObject action to the left mouse button release
-	PlayerInputComponent->BindAction("PullObjectAction", IE_Released, this, &APushPullActor::ReleaseObject);
+    // Bind the ReleaseObject action to the left mouse button release
+    PlayerInputComponent->BindAction("PullObjectAction", IE_Released, this, &APushPullActor::OnReleaseObjectReleased);
 }
 
-void APushPullActor::PullObject(const FVector& PlayerLocation)
+void APushPullActor::OnPullObjectPressed()
 {
-	if (!bIsGrabbed)
-	{
-		UE_LOG(LogTemp, Warning, TEXT("ISGRABBED"));
-		bIsGrabbed = true;
-		GrabLocation = PlayerLocation;
-		PhysicsHandleComponent->GrabComponentAtLocationWithRotation(MeshComponent, NAME_None, GrabLocation, MeshComponent->GetComponentRotation());
-	}
+    if (!bIsGrabbed)
+    {
+        UE_LOG(LogTemp, Warning, TEXT("ISGRABBED"));
+        bIsGrabbed = true;
+        // Obtain PlayerLocation within the method if necessary
+        PhysicsHandleComponent->GrabComponentAtLocationWithRotation(MeshComponent, NAME_None, MeshComponent->GetComponentLocation(), MeshComponent->GetComponentRotation());
+    }
 }
 
-void APushPullActor::ReleaseObject()
+void APushPullActor::OnReleaseObjectReleased()
 {
-	if (bIsGrabbed)
-	{
-		bIsGrabbed = false;
-		PhysicsHandleComponent->ReleaseComponent();
-	}
+    if (bIsGrabbed)
+    {
+        bIsGrabbed = false;
+        PhysicsHandleComponent->ReleaseComponent();
+    }
 }
 
 void APushPullActor::Tick(const float DeltaTime)
 {
-	Super::Tick(DeltaTime);
+    Super::Tick(DeltaTime);
 
-	// Check if the actor is being grabbed
-	if (bIsGrabbed)
-	{
-		// Use the exposed PlayerBlueprintClass to find the player's pawn
-		TArray<AActor*> FoundActors;
-		UGameplayStatics::GetAllActorsOfClass(GetWorld(), PlayerBlueprintClass, FoundActors);
+    // Check if the actor is being grabbed
+    if (bIsGrabbed && PlayerBlueprintClass!= nullptr)
+    {
+        TArray<AActor*> FoundActors;
+        UGameplayStatics::GetAllActorsOfClass(GetWorld(), PlayerBlueprintClass, FoundActors);
 
-		// Assuming the first found actor is the player's pawn
-		if (!FoundActors.IsEmpty())
-		{
-			const AActor* PlayerPawn = FoundActors[0];
-			UE_LOG(LogTemp, Warning, TEXT("Found Player Pawn: %s"), *PlayerPawn->GetName());
-			MeshComponent->SetupAttachment(PlayerPawn->GetRootComponent());
-		}
-	}
+        if (!FoundActors.IsEmpty())
+        {
+            const AActor* PlayerPawn = FoundActors[0];
+            MeshComponent->SetupAttachment(PlayerPawn->GetRootComponent());
+        }
+    }
+}
+
+void APushPullActor::SetPlayerBlueprintClass(TSubclassOf<ACharacter> NewPlayerBlueprintClass)
+{
+    PlayerBlueprintClass = NewPlayerBlueprintClass;
 }

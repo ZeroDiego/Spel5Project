@@ -9,9 +9,6 @@
   <component name="ChangeListManager">
     <list default="true" id="acdaa937-eda2-46c8-9ebf-42219eba813c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Spel5Project.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Spel5Project.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config/DefaultInput.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultInput.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel/8/3R/VKKOJ640WZL264EN7JPHND.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel/D/QS/0P0PMB34BUN37J1N3878XC.uasset" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/Spel5Project/Private/PushPullActor.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Spel5Project/Private/PushPullActor.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/Spel5Project/Public/PushPullActor.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Spel5Project/Public/PushPullActor.h" afterDir="false" />
     </list>
@@ -135,6 +132,7 @@
       <workItem from="1714586748138" duration="3966000" />
       <workItem from="1714661768228" duration="4397000" />
       <workItem from="1714986727752" duration="7661000" />
+      <workItem from="1714999677027" duration="6611000" />
     </task>
     <servers />
   </component>
