@@ -9,10 +9,15 @@
   <component name="ChangeListManager">
     <list default="true" id="acdaa937-eda2-46c8-9ebf-42219eba813c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Spel5Project.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Spel5Project.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Interactable/GasWire.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Interactable/GasWire.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Interactable/StoveFanButton.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Interactable/StoveFanButton.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Adin/Levels/AdinTestLevel.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Adin/Levels/AdinTestLevel.umap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/HamsterUnrealTest.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Assets/HamsterUnrealTest.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Diego/Blueprints/BP_DiegoGameMode.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Diego/Blueprints/BP_DiegoGameMode.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/HamsterUnrealTest.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/HamsterUnrealTest.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Lucas/BP_Interactable.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Lucas/BP_Interactable.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Lucas/Interact_Interface.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Lucas/Interact_Interface.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/ThirdPerson/Blueprints/BP_ThirdPersonCharacter.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/ThirdPerson/Blueprints/BP_ThirdPersonCharacter.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel/C/WU/YMH9ACW0OK8GV0V10AU9RS.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel/C/WU/YMH9ACW0OK8GV0V10AU9RS.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel/4/9V/B6GIBI4C19TDHH5YM31F16.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel/D/JQ/AP7AS2O5PE97QFKU2TWQAW.uasset" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,26 +36,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Berg&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "Berg",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;rider.external.source.directories&quot;: [
-      &quot;C:\\Users\\lucas\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\DecompilerCache&quot;,
-      &quot;C:\\Users\\lucas\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\SourcesCache&quot;,
-      &quot;C:\\Users\\lucas\\AppData\\Local\\Symbols\\src&quot;
+  "keyToStringList": {
+    "rider.external.source.directories": [
+      "C:\\Users\\lucas\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\DecompilerCache",
+      "C:\\Users\\lucas\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\SourcesCache",
+      "C:\\Users\\lucas\\AppData\\Local\\Symbols\\src"
     ]
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="Spel5Project" type="Uproject" factoryName="rider.uproject">
       <option name="PROJECT_FILE_PATH" value="$PROJECT_DIR$/Spel5Project.uproject" />
@@ -124,8 +129,6 @@
       <updated>1714116730724</updated>
       <workItem from="1714116732341" duration="2530000" />
       <workItem from="1714378170100" duration="2061000" />
-      <workItem from="1715001462260" duration="63000" />
-      <workItem from="1715001606896" duration="1434000" />
     </task>
     <servers />
   </component>
