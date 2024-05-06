@@ -2,6 +2,7 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
+#include "Kismet/GameplayStatics.h"
 #include "PushPullActor.generated.h"
 
 class UPhysicsConstraintComponent;
@@ -14,6 +15,7 @@ class SPEL5PROJECT_API APushPullActor : public AActor
     
 public:
 	APushPullActor();
+	void SetupPlayerInputComponent(UInputComponent* PlayerInputComponent);
 
 	UPROPERTY(EditAnywhere, Category="Environment")
 	UStaticMeshComponent* MeshComponent;
@@ -23,9 +25,13 @@ public:
 
 	UPROPERTY(EditAnywhere, Category="Environment")
 	UPhysicsHandleComponent* PhysicsHandleComponent;
+	
 
 	void PullObject(const FVector& PlayerLocation);
 	void ReleaseObject();
+
+	UPROPERTY(EditAnywhere, Category = "Player")
+	TSubclassOf<AActor> PlayerBlueprintClass;
 
 protected:
 	virtual void Tick(float DeltaTime) override;
