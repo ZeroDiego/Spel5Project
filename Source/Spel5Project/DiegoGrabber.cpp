@@ -49,13 +49,13 @@ void UDiegoGrabber::Release()
 	}
 }
 
-void UDiegoGrabber::Grab()
+bool UDiegoGrabber::Grab()
 {
 	UPhysicsHandleComponent *HandleComponent = GetPhysicsHandle();
 
 	if (HandleComponent == nullptr)
 	{
-		return;
+		return false;
 	}
 	FHitResult HitResult;
 	if (GetGrabableInReach(HitResult))
@@ -68,7 +68,10 @@ void UDiegoGrabber::Grab()
 			NAME_None,
 			HitResult.ImpactPoint,
 			GetComponentRotation());
+		return true;
 	}
+
+	return false;
 }
 
 

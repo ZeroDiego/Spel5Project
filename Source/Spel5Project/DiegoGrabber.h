@@ -29,7 +29,7 @@ public:
 	void Release();
 
 	UFUNCTION(BlueprintCallable)
-	void Grab();
+	bool Grab();
 	
 private:
 	UPROPERTY(EditAnywhere)
