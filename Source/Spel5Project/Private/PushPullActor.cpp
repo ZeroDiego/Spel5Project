@@ -4,6 +4,7 @@
 #include "Kismet/GameplayStatics.h"
 #include "Components/StaticMeshComponent.h"
 #include "PhysicsEngine/PhysicsHandleComponent.h"
+#include "GameFramework/Character.h"
 
 APushPullActor::APushPullActor()
 {
@@ -14,6 +15,7 @@ APushPullActor::APushPullActor()
     MeshComponent->SetLinearDamping(2.f);
     SetRootComponent(MeshComponent);
 
+    // Create a physics constraint component to restrict the actor's movement.
     PhysicsComponent = CreateDefaultSubobject<UPhysicsConstraintComponent>("PhysicsComponent");
     PhysicsComponent->SetLinearXLimit(LCM_Free, 0.f);
     PhysicsComponent->SetLinearYLimit(LCM_Free, 0.f);
@@ -79,6 +81,7 @@ void APushPullActor::Tick(const float DeltaTime)
         {
             const AActor* PlayerPawn = FoundActors[0];
             MeshComponent->SetupAttachment(PlayerPawn->GetRootComponent());
+            UE_LOG(LogTemp, Warning, TEXT("FOUND ACTOR"));
         }
     }
 }

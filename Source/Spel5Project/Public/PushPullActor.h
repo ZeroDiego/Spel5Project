@@ -5,6 +5,7 @@
 #include "Kismet/GameplayStatics.h"
 #include "PushPullActor.generated.h"
 
+
 class UPhysicsConstraintComponent;
 class UPhysicsHandleComponent;
 class UInputComponent;
@@ -24,10 +25,6 @@ public:
 	// Updated method signatures to match the new input handling approach
 	void OnPullObjectPressed();
 	void OnReleaseObjectReleased();
-
-	// Existing methods
-	void PullObject();
-	void ReleaseObject();
 
 	// Method to set the player blueprint class from the blueprint editor
 	void SetPlayerBlueprintClass(TSubclassOf<ACharacter> NewPlayerBlueprintClass);
