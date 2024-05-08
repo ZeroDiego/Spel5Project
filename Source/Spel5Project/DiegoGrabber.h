@@ -29,7 +29,7 @@ public:
 	void Release();
 
 	UFUNCTION(BlueprintCallable)
-	void Grab();
+	bool Grab();
 	
 private:
 	UPROPERTY(EditAnywhere)
@@ -40,6 +40,8 @@ private:
 
 	UPROPERTY(EditAnywhere)
 	float HoldDistance = 200;
+
+	ECollisionResponse OriginalCollisionResponse;
 
 	UPhysicsHandleComponent* GetPhysicsHandle() const;
 	bool GetGrabableInReach(FHitResult &OutHit) const;
