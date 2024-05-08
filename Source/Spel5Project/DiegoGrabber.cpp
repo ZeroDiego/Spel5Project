@@ -45,6 +45,7 @@ void UDiegoGrabber::Release()
 	{
 		HandleComponent->GetGrabbedComponent()->WakeAllRigidBodies();
 		HandleComponent->GetGrabbedComponent()->GetOwner()->Tags.Remove("Grabbed");
+		HandleComponent->GetGrabbedComponent()->SetCollisionResponseToChannel(ECC_WorldDynamic, OriginalCollisionResponse);
 		HandleComponent->ReleaseComponent();
 	}
 }
@@ -63,11 +64,16 @@ bool UDiegoGrabber::Grab()
 		UPrimitiveComponent* HitComponent = HitResult.GetComponent();
 		HitComponent->WakeAllRigidBodies();
 		HitResult.GetActor()->Tags.Add("Grabbed");
+
+		OriginalCollisionResponse = HitComponent->GetCollisionResponseToChannel(ECC_WorldDynamic);
+		HitComponent->SetCollisionResponseToChannel(ECC_WorldDynamic, ECR_Ignore);
+		
 		HandleComponent->GrabComponentAtLocationWithRotation(
 			HitComponent,
 			NAME_None,
 			HitResult.ImpactPoint,
 			GetComponentRotation());
+
 		return true;
 	}
 
@@ -101,4 +107,3 @@ bool UDiegoGrabber::GetGrabableInReach(FHitResult &OutHit) const
 		);
 	
 }
-
