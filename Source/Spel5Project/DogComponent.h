@@ -25,7 +25,7 @@ public:
 	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
 
 	UFUNCTION(BlueprintCallable)
-	void SetDog(ADogCharacter* DogCharacter);
+	void SetDog(ADogCharacter* NewDogCharacter);
 
 	UFUNCTION(BlueprintCallable)
 	bool GetDogIsSatisfied() const;

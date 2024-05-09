@@ -3,6 +3,8 @@
 
 #include "BTService_PlayerLocationIfSeen.h"
 #include "AIController.h"
+#include "DogAIController.h"
+#include "OwnerCharacter.h"
 #include "Kismet/GameplayStatics.h"
 #include "BehaviorTree/BlackboardComponent.h"
 
@@ -26,13 +28,27 @@ void UBTService_PlayerLocationIfSeen::TickNode(UBehaviorTreeComponent& OwnerComp
 	{
 		return;
 	}
-	
-	if (OwnerComp.GetAIOwner()->LineOfSightTo(PlayerPawn))
+
+	ADogAIController* DogAIController = Cast<ADogAIController>(OwnerComp.GetOwner());
+	AOwnerCharacter* OwnerCharacter = Cast<AOwnerCharacter>(OwnerComp.GetAIOwner()->GetPawn());
+
+	const float DistanceToPlayer = FVector::Distance(PlayerPawn->GetActorLocation(), OwnerComp.GetAIOwner()->GetPawn()->GetActorLocation());
+
+	if (OwnerCharacter != nullptr && OwnerCharacter->GetIsAlerted())
 	{
 		OwnerComp.GetBlackboardComponent()->SetValueAsObject(GetSelectedBlackboardKey(), PlayerPawn);
+		return;
 	}
-	else
+
+	if (DogAIController != nullptr)
 	{
-		OwnerComp.GetBlackboardComponent()->ClearValue(GetSelectedBlackboardKey());
+		if (OwnerComp.GetAIOwner()->LineOfSightTo(PlayerPawn) && DistanceToPlayer <= DogAIController->GetVisionRange())
+		{
+			OwnerComp.GetBlackboardComponent()->SetValueAsObject(GetSelectedBlackboardKey(), PlayerPawn);
+		}
+		else
+		{
+			OwnerComp.GetBlackboardComponent()->ClearValue(GetSelectedBlackboardKey());
+		}
 	}
 }
