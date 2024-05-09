@@ -9,15 +9,14 @@
   <component name="ChangeListManager">
     <list default="true" id="acdaa937-eda2-46c8-9ebf-42219eba813c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Spel5Project.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Spel5Project.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Adin/Levels/AdinTestLevel.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Adin/Levels/AdinTestLevel.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/HamsterUnrealTest.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Assets/HamsterUnrealTest.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Diego/Blueprints/BP_DiegoGameMode.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Diego/Blueprints/BP_DiegoGameMode.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/HamsterUnrealTest.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/HamsterUnrealTest.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Lucas/BP_Interactable.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Lucas/BP_Interactable.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Lucas/Interact_Interface.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Lucas/Interact_Interface.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Diego/Blueprints/BP_DogCharacter.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Diego/Blueprints/BP_DogCharacter.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Erik/OwnerAi.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Erik/OwnerAi.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Interactable/ExplodeButton.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Interactable/ExplodeButton.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/ThirdPerson/Blueprints/BP_ThirdPersonCharacter.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/ThirdPerson/Blueprints/BP_ThirdPersonCharacter.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel/4/9V/B6GIBI4C19TDHH5YM31F16.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel/D/JQ/AP7AS2O5PE97QFKU2TWQAW.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel/1/0M/YBEK4XEE9ZOJDIYHA6PRD1.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel/1/0M/YBEK4XEE9ZOJDIYHA6PRD1.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel/B/TL/3C4JD96TYMVPZVH8T61OXL.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel/B/TL/3C4JD96TYMVPZVH8T61OXL.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel/C/V6/E77AC1MOMMRVCNLQP4S733.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel/C/V6/E77AC1MOMMRVCNLQP4S733.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel/E/RO/L5I2QNX2LEK35N27MGTQIZ.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel/E/RO/L5I2QNX2LEK35N27MGTQIZ.uasset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +39,9 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Uproject.Spel5Project.executor": "Run",
     "git-widget-placeholder": "Berg",
+    "ignore.virus.scanning.warn.message": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -129,12 +130,19 @@
       <updated>1714116730724</updated>
       <workItem from="1714116732341" duration="2530000" />
       <workItem from="1714378170100" duration="2061000" />
+      <workItem from="1715001462260" duration="63000" />
+      <workItem from="1715001606896" duration="1434000" />
+      <workItem from="1715098137687" duration="3000" />
+      <workItem from="1715127423559" duration="1803000" />
+      <workItem from="1715153657969" duration="6695000" />
+      <workItem from="1715203230495" duration="625000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
