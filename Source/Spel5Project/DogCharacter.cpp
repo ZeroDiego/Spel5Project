@@ -39,7 +39,7 @@ bool ADogCharacter::GetIsSatisfied() const
 	return IsSatisfied;
 }
 
-void ADogCharacter::SetSatisfied(bool NewIsSatisfied)
+void ADogCharacter::SetSatisfied(const bool NewIsSatisfied)
 {
 	UGameplayStatics::SpawnSoundAttached(EatSound, GetMesh(), TEXT("Eat"));
 	IsSatisfied = NewIsSatisfied;
@@ -56,4 +56,12 @@ void ADogCharacter::Alert()
 	UGameplayStatics::SpawnSoundAttached(BarkSound, GetMesh(), TEXT("Bark"));
 }
 
+UMover* ADogCharacter::GetMover() const
+{
+	return Mover;
+}
 
+void ADogCharacter::SetMover(UMover* NewMover)
+{
+	Mover = NewMover;
+}
