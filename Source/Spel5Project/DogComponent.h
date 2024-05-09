@@ -29,6 +29,15 @@ public:
 
 	UFUNCTION(BlueprintCallable)
 	bool GetDogIsSatisfied() const;
+
+	UFUNCTION(BlueprintCallable)
+	void SetDogIsSatisfied(const bool NewIsSatisfied) const;
+
+	UFUNCTION(BlueprintCallable)
+	bool GetDogIsSleeping() const;
+
+	UFUNCTION(BlueprintCallable)
+	void SetDogIsSleeping(const bool NewIsSleeping) const;
 	
 private:
 	ADogCharacter* DogCharacter;
