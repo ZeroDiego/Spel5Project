@@ -1,5 +1,6 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
+
 #include "DiegoGrabber.h"
 #include "Engine/World.h"
 
@@ -44,18 +45,17 @@ void UDiegoGrabber::Release()
 	{
 		HandleComponent->GetGrabbedComponent()->WakeAllRigidBodies();
 		HandleComponent->GetGrabbedComponent()->GetOwner()->Tags.Remove("Grabbed");
-		HandleComponent->GetGrabbedComponent()->SetCollisionResponseToChannel(ECC_WorldDynamic, OriginalCollisionResponse);
 		HandleComponent->ReleaseComponent();
 	}
 }
 
-bool UDiegoGrabber::Grab()
+void UDiegoGrabber::Grab()
 {
 	UPhysicsHandleComponent *HandleComponent = GetPhysicsHandle();
 
 	if (HandleComponent == nullptr)
 	{
-		return false;
+		return;
 	}
 	FHitResult HitResult;
 	if (GetGrabableInReach(HitResult))
@@ -63,20 +63,12 @@ bool UDiegoGrabber::Grab()
 		UPrimitiveComponent* HitComponent = HitResult.GetComponent();
 		HitComponent->WakeAllRigidBodies();
 		HitResult.GetActor()->Tags.Add("Grabbed");
-
-		OriginalCollisionResponse = HitComponent->GetCollisionResponseToChannel(ECC_WorldDynamic);
-		HitComponent->SetCollisionResponseToChannel(ECC_WorldDynamic, ECR_Ignore);
-		
 		HandleComponent->GrabComponentAtLocationWithRotation(
 			HitComponent,
 			NAME_None,
 			HitResult.ImpactPoint,
 			GetComponentRotation());
-
-		return true;
 	}
-
-	return false;
 }
 
 
@@ -106,3 +98,4 @@ bool UDiegoGrabber::GetGrabableInReach(FHitResult &OutHit) const
 		);
 	
 }
+
