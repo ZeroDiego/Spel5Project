@@ -16,5 +16,10 @@ void UBTService_IsAlerted::TickNode(UBehaviorTreeComponent& OwnerComp, uint8* No
 	Super::TickNode(OwnerComp, NodeMemory, DeltaSeconds);
 
 	AOwnerCharacter* ControlledCharacter = Cast<AOwnerCharacter>(OwnerComp.GetAIOwner()->GetPawn());
+	if (ControlledCharacter == nullptr)
+	{
+		return;
+	}
+	
 	OwnerComp.GetBlackboardComponent()->SetValueAsBool(TEXT("IsAlerted"), ControlledCharacter->GetIsAlerted());
 }

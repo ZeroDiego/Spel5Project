@@ -3,34 +3,39 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "Components/SceneComponent.h"
-#include "DogCharacter.h"
-#include "DogComponent.generated.h"
+#include "Components/ActorComponent.h"
+#include "Mover.generated.h"
 
 
 UCLASS( ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )
-class SPEL5PROJECT_API UDogComponent : public USceneComponent
+class SPEL5PROJECT_API UMover : public UActorComponent
 {
 	GENERATED_BODY()
 
 public:	
 	// Sets default values for this component's properties
-	UDogComponent();
+	UMover();
 
 protected:
 	// Called when the game starts
 	virtual void BeginPlay() override;
 
-public:
+public:	
+	// Called every frame
 	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
 
-	UFUNCTION(BlueprintCallable)
-	void SetDog(ADogCharacter* NewDogCharacter);
-
-	UFUNCTION(BlueprintCallable)
-	bool GetDogIsSatisfied() const;
+	void SetShouldMove(bool ShouldMove);
 	
 private:
-	ADogCharacter* DogCharacter;
-	
+	UPROPERTY(EditAnywhere)
+	float MoveTime = 4;
+
+	UPROPERTY(EditAnywhere)
+	FVector MoveOffset;
+
+	UPROPERTY(EditAnywhere)
+	bool ShouldMove = false;
+
+	FVector OriginalLocation;
+		
 };

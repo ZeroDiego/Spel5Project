@@ -16,5 +16,10 @@ void UBTService_DogOwnerPlayerLocation::TickNode(UBehaviorTreeComponent& OwnerCo
 	Super::TickNode(OwnerComp, NodeMemory, DeltaSeconds);
 
 	AOwnerCharacter* ControlledCharacter = Cast<AOwnerCharacter>(OwnerComp.GetAIOwner()->GetPawn());
+	if (ControlledCharacter == nullptr)
+	{
+		return;
+	}
+	
 	OwnerComp.GetBlackboardComponent()->SetValueAsVector(GetSelectedBlackboardKey(), ControlledCharacter->GetLastKnownPlayerLocation());
 }

@@ -55,3 +55,13 @@ void ADogCharacter::Alert()
 	IsAlert = true;
 	UGameplayStatics::SpawnSoundAttached(BarkSound, GetMesh(), TEXT("Bark"));
 }
+
+UMover* ADogCharacter::GetMover() const
+{
+	return Mover;
+}
+
+void ADogCharacter::SetMover(UMover* NewMover)
+{
+	Mover = NewMover;
+}
