@@ -39,15 +39,34 @@ bool ADogCharacter::GetIsSatisfied() const
 	return IsSatisfied;
 }
 
-void ADogCharacter::SetSatisfied(bool NewIsSatisfied)
+void ADogCharacter::SetSatisfied(const bool NewIsSatisfied)
 {
-	UGameplayStatics::SpawnSoundAttached(EatSound, GetMesh(), TEXT("Eat"));
 	IsSatisfied = NewIsSatisfied;
+
+	if (IsSatisfied)
+	{
+		UGameplayStatics::SpawnSoundAttached(EatSound, GetMesh(), TEXT("Eat"));
+	}
 }
 
-void ADogCharacter::Sleep()
+bool ADogCharacter::GetIsSleeping() const
 {
-	IsSleeping = true;
+	return IsSleeping;
+}
+
+void ADogCharacter::SetIsSleeping(const bool NewIsSleeping)
+{
+	IsSleeping = NewIsSleeping;
+}
+
+bool ADogCharacter::GetHasEaten() const
+{
+	return HasEaten;
+}
+
+void ADogCharacter::SetHasEaten(const bool NewHasEaten)
+{
+	HasEaten = NewHasEaten;
 }
 
 void ADogCharacter::Alert()
@@ -56,4 +75,12 @@ void ADogCharacter::Alert()
 	UGameplayStatics::SpawnSoundAttached(BarkSound, GetMesh(), TEXT("Bark"));
 }
 
+UMover* ADogCharacter::GetMover() const
+{
+	return Mover;
+}
 
+void ADogCharacter::SetMover(UMover* NewMover)
+{
+	Mover = NewMover;
+}

@@ -3,6 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "Mover.h"
 #include "GameFramework/Character.h"
 #include "DogCharacter.generated.h"
 
@@ -20,12 +21,17 @@ protected:
 	virtual void BeginPlay() override;
 
 public:
-
 	bool GetIsSatisfied() const;
 	
-	void SetSatisfied(bool IsSatisfied);
+	void SetSatisfied(bool NewIsSatisfied);
 	
-	void Sleep();
+	bool GetIsSleeping() const;
+	
+	void SetIsSleeping(bool NewIsSleeping);
+
+	bool GetHasEaten() const;
+	
+	void SetHasEaten(bool NewHasEaten);
 
 	void Alert();
 	
@@ -34,6 +40,11 @@ public:
 
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
+
+	UMover* GetMover() const;
+	
+	UFUNCTION(BlueprintCallable)
+	void SetMover(UMover* NewMover);
 	
 private:
 	UPROPERTY(VisibleAnywhere)
@@ -41,6 +52,9 @@ private:
 
 	UPROPERTY(VisibleAnywhere)
 	bool IsSleeping;
+	
+	UPROPERTY(VisibleAnywhere)
+	bool HasEaten;
 
 	UPROPERTY(VisibleAnywhere)
 	bool IsAlert;
@@ -55,4 +69,6 @@ private:
 	USoundBase* EatSound;
 	
 	FTimerHandle SleepTimer;
+
+	UMover* Mover;
 };

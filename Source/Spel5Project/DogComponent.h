@@ -25,10 +25,19 @@ public:
 	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
 
 	UFUNCTION(BlueprintCallable)
-	void SetDog(ADogCharacter* DogCharacter);
+	void SetDog(ADogCharacter* NewDogCharacter);
 
 	UFUNCTION(BlueprintCallable)
 	bool GetDogIsSatisfied() const;
+
+	UFUNCTION(BlueprintCallable)
+	void SetDogIsSatisfied(const bool NewIsSatisfied) const;
+
+	UFUNCTION(BlueprintCallable)
+	bool GetDogIsSleeping() const;
+
+	UFUNCTION(BlueprintCallable)
+	void SetDogIsSleeping(const bool NewIsSleeping) const;
 	
 private:
 	ADogCharacter* DogCharacter;

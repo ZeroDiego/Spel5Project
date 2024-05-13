@@ -19,6 +19,8 @@ public:
     void Tick(float DeltaTime) override;
 	void SetSatisfied() const;
 
+	float GetVisionRange() const;
+
 protected:
 	void BeginPlay() override;
 
@@ -27,4 +29,7 @@ private:
 	UBehaviorTree* AIBehavior;
 
 	ADogCharacter* DogCharacter;
+
+	UPROPERTY(EditAnywhere)
+	float VisionRange;
 };

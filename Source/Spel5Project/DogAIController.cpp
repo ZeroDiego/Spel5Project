@@ -33,3 +33,8 @@ void ADogAIController::SetSatisfied() const
 		ControlledCharacter->SetSatisfied(true);
 	}
 }
+
+float ADogAIController::GetVisionRange() const
+{
+	return VisionRange;
+}
