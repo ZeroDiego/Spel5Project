@@ -1,10 +1,10 @@
 #include "Spel5Project/Public/PushPullActor.h"
 #include "Engine/Engine.h"
 #include "PhysicsEngine/PhysicsConstraintComponent.h"
-#include "Kismet/GameplayStatics.h"
 #include "Components/StaticMeshComponent.h"
 #include "PhysicsEngine/PhysicsHandleComponent.h"
-#include "GameFramework/Character.h"
+#include "Components/BoxComponent.h"
+
 
 APushPullActor::APushPullActor()
 {
@@ -32,61 +32,27 @@ APushPullActor::APushPullActor()
     Tags.Add("movable");
 }
 
-void APushPullActor::BeginPlay()
-{
-    Super::BeginPlay();
-}
-
-void APushPullActor::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
-{
-    // Bind actions to the actor's methods
-    // Bind the PullObject action to the left mouse button press
-    PlayerInputComponent->BindAction("PullObjectAction", IE_Pressed, this, &APushPullActor::OnPullObjectPressed);
-
-    // Bind the ReleaseObject action to the left mouse button release
-    PlayerInputComponent->BindAction("PullObjectAction", IE_Released, this, &APushPullActor::OnReleaseObjectReleased);
-}
-
-void APushPullActor::OnPullObjectPressed()
-{
-    if (!bIsGrabbed)
-    {
-        UE_LOG(LogTemp, Warning, TEXT("ISGRABBED"));
-        bIsGrabbed = true;
-        // Obtain PlayerLocation within the method if necessary
-        PhysicsHandleComponent->GrabComponentAtLocationWithRotation(MeshComponent, NAME_None, MeshComponent->GetComponentLocation(), MeshComponent->GetComponentRotation());
-    }
-}
-
-void APushPullActor::OnReleaseObjectReleased()
-{
-    if (bIsGrabbed)
-    {
-        bIsGrabbed = false;
-        PhysicsHandleComponent->ReleaseComponent();
-    }
-}
-
-void APushPullActor::Tick(const float DeltaTime)
+void APushPullActor::Tick(float DeltaTime)
 {
     Super::Tick(DeltaTime);
 
-    // Check if the actor is being grabbed
-    if (bIsGrabbed && PlayerBlueprintClass!= nullptr)
+    // Check if both bOwnerOverlapping and bCharOverlapping are true
+    if (bOwnerOverlapping && bCharOverlapping)
     {
-        TArray<AActor*> FoundActors;
-        UGameplayStatics::GetAllActorsOfClass(GetWorld(), PlayerBlueprintClass, FoundActors);
-
-        if (!FoundActors.IsEmpty())
-        {
-            const AActor* PlayerPawn = FoundActors[0];
-            MeshComponent->SetupAttachment(PlayerPawn->GetRootComponent());
-            UE_LOG(LogTemp, Warning, TEXT("FOUND ACTOR"));
-        }
+        DisablePhysics();
+    }
+    else
+    {
+        EnablePhysics();
     }
 }
 
-void APushPullActor::SetPlayerBlueprintClass(TSubclassOf<ACharacter> NewPlayerBlueprintClass)
+void APushPullActor::EnablePhysics()
 {
-    PlayerBlueprintClass = NewPlayerBlueprintClass;
+    MeshComponent->SetSimulatePhysics(true);
+}
+
+void APushPullActor::DisablePhysics()
+{
+    MeshComponent->SetSimulatePhysics(false);
 }

@@ -8,20 +8,260 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="acdaa937-eda2-46c8-9ebf-42219eba813c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Content/Diego/Levels/DiegoJacobLevel1.umap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/0/2A/2VYH94TUOGVTSWFVA6KTR2.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/0/3M/QZRDKA39WXRZAU7B6MLUMI.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/0/4A/CPFCBHG7M5560OFJR8GM4G.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/0/4Q/ZSRR62H38QMYTRSE4HCYNT.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/0/4V/5FOY43580UB2WG7KXXIHI6.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/0/67/HQ8E95GHVPNT58ZEMQSNDI.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/0/7Q/XDWWC863FFR9CEFAW3YKAS.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/0/BZ/6GFPZZZHWN3KTC6405V34Q.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/0/D6/XZSB0ARP24EI1HXNT0VL33.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/0/EM/TGHVFIB5YIWBWEKYF934LG.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/0/EU/O93SU1HYX0ET5ACK7W97Z2.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/0/JE/IQIZLULL2BQZSJJ7B5Y4CV.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/0/L0/Z1SPVEOLS9BK9DTITN94CV.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/0/LF/BI6DCSIRQV69TI93ZO0TF4.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/0/NA/7Y69HIB6RR9D3SRWPGRGJW.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/0/UA/6R85E0T2C3Q6TZTLRZZCFS.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/0/UM/FXM9MDF9S47TTGEQ0T76XL.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/0/V9/8SVYSPWG4DMDRWZWX4WN3G.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/0/VM/K8S3BLU2FQW8EMH7TNXAUB.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/0/YA/R60P55BOYY0OAQG704XT15.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/1/AE/OZPNOXK9R9CR1WWXP5NE72.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/1/BL/6Z9OUD2K0058ASF1PD4ALV.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/1/DH/ELKTRTT0T51HJQ76MZJCSA.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/1/E0/OFMAQJXMFORVER8XGV9J6X.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/1/G2/TGBCEPQDULBFCV8L3PGY31.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/1/GY/AESPHGJAB4DEXO750DQ1V9.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/1/L2/2ZLHNAS3DMWHPD76CH77BE.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/1/LM/CJUHJI7UEKL0KWFAJCPP6A.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/1/LR/3NO9LM27OW0SDE625IL8LF.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/1/NS/NUKPIKXQHO3WSQTJSN0XWL.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/1/OB/9AINR6FAINJLQEQ9AS4N1U.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/1/TH/2OM19U9W7LVA0UM9WFQ5WP.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/1/UV/X3XOSLSG4H5TU74122L5BJ.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/1/VP/6UDNITRGW537Z8DTVJ9SVM.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/1/VW/N4B9ZUD96UIN19EQ46TSGM.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/1/ZQ/EWHOKD8D4I6NGF052SHRG8.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/2/2W/PHO82N9MHWXI0MBR1WEBJ4.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/2/5D/NEEODLC6ULT2MCR59J8DI9.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/2/5U/YCAFIIYOG4NXYYGLYPP6WV.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/2/7A/1FMJV5FWTVOJ6OZT9V0A99.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/2/86/9SNJ2QYEFCRQIOIER2NYFF.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/2/8H/PVAW0XDZA45M6861YUL99T.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/2/8J/HW11NTIG20EI34X92CGMAX.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/2/9X/C4AZWDN2D67ZC4F7JEKACZ.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/2/B2/9WEHYGBNBR43JVGBOQJYSK.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/2/BE/XWD212I3YPWKTW56U5A22K.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/2/DN/TKXQLDY30WKXJ2Y66RMSRV.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/2/F9/1ZPT0BO64ZFLTDRR46FDFG.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/2/HG/2GHJPPN3Z3Q6EGIPEG20VN.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/2/QD/S4SNASR41GXJ4YGJ2V78AP.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/2/SH/F8KPFAS0D5NVX1JLC2J989.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/2/SX/4S36UR93BS7BU5S11B9YXV.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/2/TL/OYSB6SBL33WW46MA5L7ZT9.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/2/VQ/ZMP5S1A3YNNOUQYI3SJQ2C.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/2/VV/D00FPFRM0K0QJSGI20JC1Q.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/2/X3/WWQDOFL3Z0JOO36F0L9LYP.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/3/3D/LQF4R63WOQDUQ3BX43UC1W.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/3/3P/3K57P6Q7S0OQ1Q1PSK130R.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/3/6X/1SI27ISQFFAICNK1M162WE.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/3/8I/D9P4UTKW8GAWXHVX2VN4KE.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/3/8V/GN7KZS8Q3HRCJ9MT43VROS.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/3/96/GJQ3QR0V8VT9IMHGWN6V1J.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/3/DE/ARJVBR3ZVRXA950TU4HSYP.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/3/G0/4L1A8Y6A3NO98V6FIYD32V.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/3/H4/5EN6O7MXV91ODRKGM7YK6R.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/3/HF/PUC93J8R16XK6HX2TKO2FV.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/3/I3/3XGIXO05CCZVU0NGYYRA5Y.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/3/IJ/U28QUH322FY6YRCUY2I75F.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/3/NH/ZQEB9JHV23LEZU68ANC5IW.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/3/PM/Z598FYSCXKXYEEB3OVCKTO.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/3/QH/VHVR8VQRHFEPTSYJGPKJ1Q.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/3/ZP/PC5N6XMZYTCCBD6UK90DTV.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/3/ZV/GJDLZXH28MAX89RA7N5ZWG.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/4/0V/9X24H35PQ207LVK5XAZRZ3.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/4/1R/JH3SQJDK97BCP63EZLOILV.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/4/5O/4228LV8W6ZK1Z1FLM1F3G5.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/4/8I/9UIFX9D66YK2JBL13KH2RQ.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/4/DO/CAYBAZMAG0W85BNU3S0CPQ.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/4/EJ/Q4C8F91Y8NLQVDFPO8Z3RN.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/4/EZ/WDBY92HR2EUWBRRJ24ZYSL.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/4/FE/A3CWYFUVTKRP48X2N9EHG5.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/4/H0/DF9725GRJQZ9JVA1L3HTB3.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/4/HA/NGB260CSSAZTSY5BIXXDME.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/4/SO/MFT0MHNMJU6HVGLKBF4ZL5.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/4/SQ/XF5PBW4774GJRXUZ1F2V8R.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/4/SW/D65GF0PPY1JEM0PR09PKQB.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/4/ZF/9H0418MMUOOW7X48FOTQWY.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/5/1M/WB45J4YVRQ7U0BS32G943W.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/5/35/MK4R2E18IQLRL8GAXQZCU8.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/5/7N/2HMZWFF4638HU0315OM2KN.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/5/AN/20MB9XVY8COV6XX0XGRA73.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/5/CZ/SE82V2RS9Z6KRGR0H5XEWS.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/5/D8/FXCFLC8VNHEL29BI08ZJVP.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/5/DT/7MV2E68Y9L0LTV9VB0YXU9.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/5/HS/2WJHCJ16GQWS9M8GX1E64G.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/5/KZ/YT68E4RLIFLR08S2W4YPP9.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/5/LK/RR7WCBL68N9VKL4YSX8QFN.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/5/MT/GPR68T2BTLYM9M8VMEAYV6.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/5/OI/YD8Y19SK9WKBU7QN1PHZ02.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/5/RG/OS94ESYLK80KPJDV88G3CQ.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/5/RK/VBOOCNWSH2ZRT2EGQFX8PF.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/5/UR/ZSEYX4PFP20RNG02BHXC4S.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/5/ZA/CJY5C3IWQLZZFO1ZIDXDE0.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/6/3S/E4Q03IGR0BN7HS4AJRFT7M.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/6/88/APXT8STGZA41BQJ15ZU6C7.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/6/9Z/ONGBEJQZ67IFSMRQ6OJTOD.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/6/CM/ZH6JUZVHQR9NGX2Z5OFW6R.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/6/D1/N9M3LWDZKSJAKUN7WXXET6.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/6/D6/Z8QKRVP6B1LUGI89SY10L4.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/6/D7/G6VI3CV9T48NJPKDZTODPZ.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/6/DJ/6MGNL2YJ91WVY7EI1XI960.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/6/EE/KKGJDPAA29IATKFXTQ9SLT.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/6/H3/JJLQ9X9BWROMDBO29ALDVK.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/6/HR/6J8NVTI546P8IQ2CDI88H3.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/6/IB/1T361T9NBVAT7Q5CWR8SLZ.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/6/NG/X2NAT0IPC71IO0TBCB3WO2.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/6/OH/GQJ89PQV3HDHH2B6FK43TN.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/6/WZ/GKVTU351EDYABXSTWO2CO3.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/7/06/OJKB0GIEBBEPGMRDQ1LHIO.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/7/2J/45E2VHR7F0X1GX1H1P996Z.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/7/7B/79608616ISE73ISJD2OCF9.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/7/AR/0W7WKMMSJOI0V1CLWLYF86.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/7/B5/39KJ4RSSNFR2HX0N3FG0NV.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/7/CG/UVGZ06FLF9NZTV55RX7E12.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/7/CH/FQVPPY49DGVXWQFD6OQ48Q.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/7/DD/BZXS15E3TV3NBLDI9ENYN7.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/7/DJ/57BZC7BGV4P98MSNKVHW4A.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/7/FB/1IUW6UI2XTTWIPPV4XD65J.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/7/JH/DC8ECX6TUBJZMVZN50OF6P.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/7/JW/SSW9M89E8URL01JHT07GVR.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/7/L1/GWK4YYJ0ZT5F5QJDX7YVX2.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/7/RF/O845MT2CTJDWC4L9S21OA1.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/7/ST/3NQFM2U48X4X4HRG9VSS1C.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/7/T4/Q3HO5S3IL9LTYXBLO4XIIG.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/7/V9/0VJU7BAJK9BN9HFWSDHFFY.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/7/VQ/11I0AHQB15MCLDFZK3EGHN.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/7/YA/HVILAZLVQ29I2XAIQW1DR3.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/8/0P/IB8FW5B18V8BWCZF0W8GHL.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/8/41/115PDMOLBQZKVLQN3H1H39.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/8/8Q/61EBK4MO6RURH7OEUF5OIW.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/8/8U/HR98M6OAC6NH1ZUHR5541F.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/8/9Q/205QSJ3MYF4SHY07Q8ICKH.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/8/9R/N1FCB98JGKYS3AR6YOMXY8.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/8/9Y/2DRHXSC1NNS8UTIY11PFJV.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/8/A3/MZDJ8VOW5VH4ABZN3246RL.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/8/DX/9EEKQO8FNXC5BN3XDVG2HN.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/8/EN/CY867O7Z2KNW77RBD28OTT.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/8/FQ/POE5GQ69DDFP4FV46DPJUY.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/8/GJ/9UFRPW4LHB86SOMMHYM7R6.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/8/M8/DUVSLGUAHWYDSED6A7S2UN.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/8/PO/ARUCG7ZWJ6KN9DHHFV71BW.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/8/SP/ULVVNT3GHS0KWCC8A6FZG4.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/8/TN/KESPQDU2XM7O8I7VK2UAY0.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/9/0V/HTIZDRXJC9Y37N4EPEPXZ1.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/9/5A/KWESJY47WD356PU36H9E0K.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/9/91/POWN2TL74UMW9XRZPW4ZUV.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/9/E3/AO1GOQC98200O4WII2O4IW.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/9/EF/GTK94ZOCP6HLXK16V2WKHY.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/9/HA/YL24ZSJD4NV1LGV5TNX1XL.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/9/HX/THLXP07I96YFCDY0W703KA.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/9/MU/WV37Z3VMITG8QQ2OK0V6GO.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/9/OP/AI0XZ6ML4XQUBPJBHTJP1O.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/9/SQ/VROOCMSTTYR0H5OVQMCZ7H.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/9/T7/FSBL8YWZMQC969KQOBQL36.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/9/TI/QGVV682ENKSDBMQZX3QO8F.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/9/TX/SU5SVG7R96SU3K37ZS3S4M.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/9/ZF/0IKM5316HEGP9IGXFU71DD.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/A/45/H45O0Y80SA731ZSI5LCL0Q.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/A/5H/UYBVTTUN2I7N1YX3OJL0FJ.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/A/5W/DHPCHB9GVIOSGPMZNRXCNN.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/A/6U/384NQ2JGWPS5YBFI4EYBIA.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/A/8E/Q3EUAZ2E11726RRTPI75DH.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/A/CF/G81X8U3TYMB8K2V8D5RHI8.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/A/HE/HOBC8NN9UXU00XV7OANJ07.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/A/IX/1F7DL1TCXMH0YWDZXASKQ2.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/A/J2/7GRVHODH1KWLOET2U98QRF.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/A/JS/I5X713NTSQW42Y6WF68BIV.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/A/KW/X6HG7281N1RR3P7GJCFLPX.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/A/LD/RZYH7VM22N1MCIOV4IAIHX.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/A/LK/Q8B3WGTECRMBF0YKB4WJAU.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/A/OY/JK69IE50AB7W9FNCCQ04ZJ.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/A/R6/U7JAL08XSBAAY13P5IR17V.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/A/SN/O7P52PE02YQM96S6MJ2DAQ.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/B/2S/TMYK5M3WDSOLT5RAW20REQ.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/B/30/A7HPH6ZJRJFEELRKT6FQFA.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/B/8Q/ZPMDTOJCWBQYMYEJMP7L08.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/B/91/K7Q1KGCM40CF5ESE4WPFL5.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/B/9B/WNHH1WFN50HSTX2OE3OOML.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/B/AY/T4STVA1VPYS754V0CTKA99.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/B/G1/UGXTN856Q0G5EGHU5HAM5G.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/B/O7/UZ1AMIKX38AR0IZDDYBC3M.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/B/PB/385MR3WMVG6VLWDM2YF7JR.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/B/Q4/8NUYCOFWIZLE0AZ9J5ATKD.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/B/SM/NIL2JBABU2BS49HAUXQA0L.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/B/X7/OE5Y0B2K62AWYF2SF2N0B6.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/B/X9/2ONNGOPULTYI6WDQKFADEQ.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/B/XC/A79E31YB1MAZCT09JRM65C.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/B/YB/SJG319UEXYELMMAJQ9QRMN.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/C/0X/L7KSJ9H6P51E4GBT6Q0WAV.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/C/1D/R8G9JN4MCI1JN55BCSP3IN.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/C/1S/HPX5NLAEA7D3AHNQ1EQDJI.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/C/2P/W2NB3P2AF8VKK1XHOJDJ3W.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/C/5T/X6C5WPR42FF2KFVLPRY6A3.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/C/6B/328YUQ94VRYG5N3TEUHFQH.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/C/CR/GF3R6EMPOPKBKT9UXW88YQ.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/C/E2/V3JWXEFUBTOMB2T6U4MZ8V.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/C/ID/54JNS3BCKW4FFJ7QP7DXA2.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/C/MK/H7UFIQ45I2JXNT5BNF68YA.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/C/OI/40DS7DAU7CH0PO5F94KU8X.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/C/R3/NYN9VI8EI8OQN5HRG6LFV4.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/C/RM/3YQ0EVDOJUVHTG71KKRFJL.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/C/SG/PL2KZM66JHADST37KWPJZ5.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/C/VI/5ISFIEM0WOI5DIGZ63C4BZ.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/C/W9/07X6WX4M4UIOHD15J5BOGG.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/C/WL/DKMI319C74SUZODN7JNU8L.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/D/0H/IPAGBFC75S5CAPEYT0T235.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/D/4M/NNWCNBD5X29QCJF0K1RTXE.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/D/5O/F5AT231W8NUEYXUGHPEVSS.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/D/6J/P3E81JTVFH2506DVH3K0DF.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/D/DO/00XR00HRPIMYGBQ5FZHKEZ.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/D/FN/O4ZL5QT7WQ4TOFUA2ZUXY9.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/D/HU/4QM3UQGHBTN3C1DTM1CHVW.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/D/JW/XIILRV56VUZQGUYOECPSTS.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/D/O1/PQPIKP7ZCQ31A1N7407N71.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/D/V6/T940KQJPQ4PMP6RUKYQJ0B.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/D/Z9/L6XC5Q5M6O0TBFWDWFIPFZ.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/E/2Q/JFP4EMLPB9RBYCX24FDY3Z.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/E/7H/YUJRBKE5I8LJIZT1KUMI1V.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/E/7J/X1YXBNPFFS1HEM6E0DHYLN.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/E/8P/Y2U6ZBCO2OLPHORXEH09HT.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/E/9F/4L3EF42HCFMT4NLO6T7WOJ.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/E/AH/HVP4DJO21XN1MTLRZDQE1T.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/E/BX/3023FR7TB9GRUE48223ZF3.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/E/CC/PM5KGY2U09QE062R9SS0MG.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/E/EU/OW1B8CN94FJXE82TO08C4K.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/E/FO/RR7AWTZLXHTUYQDFNHHALG.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/E/K2/DHUN962LO6C9LP45ZYN3SG.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/E/N2/JJVPHCE2PWUS55VWF7VSH4.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/E/NB/0TRFQY21UIM75QQ4G5INTG.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/E/OO/1VOTE7MXW596236KDZRJP5.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/E/SH/J3FAQ1HZOZZOJUXF6Q50S5.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/F/4I/QPC9MVPOT0USJVEX7WY8U0.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalObjects__/Diego/Levels/DiegoJacobLevel1/0/ST/0MWCHGE7FXYVIV7QK3NQ8A.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalObjects__/Diego/Levels/DiegoJacobLevel1/1/74/RVUUCQBAAH6RDW4DVXQXSY.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalObjects__/Diego/Levels/DiegoJacobLevel1/1/RG/34PHSD25LOQUJ5LIPYKV9Y.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalObjects__/Diego/Levels/DiegoJacobLevel1/4/FX/RSMOQ7SI1GL6U44EE3WY44.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalObjects__/Diego/Levels/DiegoJacobLevel1/5/ID/P5KY8P06XH5B4PIC4IG5VW.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Spel5Project.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Spel5Project.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Diego/AI/BP_Patrol.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Diego/AI/BP_Patrol.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Diego/AI/BT_DogAI.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Diego/AI/BT_DogAI.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Diego/AI/BT_OwnerAI.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Diego/AI/BT_OwnerAI.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Erik/OwnerAi.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Erik/OwnerAi.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/NewBlueprint.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/NewBlueprint.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/ThirdPerson/Blueprints/BP_ThirdPersonCharacter.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/ThirdPerson/Blueprints/BP_ThirdPersonCharacter.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel/2/YD/613CD32GSKLIWRROHL03QL.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel/2/YD/613CD32GSKLIWRROHL03QL.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel/E/RO/L5I2QNX2LEK35N27MGTQIZ.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel/E/RO/L5I2QNX2LEK35N27MGTQIZ.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Spel5Project/BTTask_OpenDogWall.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Spel5Project/BTTask_OpenDogWall.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Spel5Project/DogCharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Spel5Project/DogCharacter.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Spel5Project/DogCharacter.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Spel5Project/DogCharacter.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Spel5Project/DogComponent.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Spel5Project/DogComponent.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Spel5Project/DogComponent.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Spel5Project/DogComponent.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Spel5Project/Mover.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Spel5Project/Mover.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel/0/TM/RWV8KBL3XFG036UB2CVEDD.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Spel5Project/Private/PushPullActor.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Spel5Project/Private/PushPullActor.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Spel5Project/Public/PushPullActor.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Spel5Project/Public/PushPullActor.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +289,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "Uproject.Spel5Project.executor": "Run",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "ÖdénBranch",
     "ignore.virus.scanning.warn.message": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -60,81 +300,70 @@
   },
   "keyToStringList": {
     "rider.external.source.directories": [
-      "C:\\Users\\DIEGO\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache",
-      "C:\\Users\\DIEGO\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache",
-      "C:\\Users\\DIEGO\\AppData\\Local\\Symbols\\src"
+      "C:\\Users\\Lucas\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\DecompilerCache",
+      "C:\\Users\\Lucas\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\SourcesCache",
+      "C:\\Users\\Lucas\\AppData\\Local\\Symbols\\src"
     ]
   }
 }]]></component>
   <component name="RunManager">
     <configuration name="Spel5Project" type="Uproject" factoryName="rider.uproject">
-      <configuration_1>
+      <option name="PROJECT_FILE_PATH" value="$PROJECT_DIR$/Spel5Project.uproject" />
+      <configuration_2>
         <option name="CONFIGURATION" value="DebugGame Editor" />
         <option name="PLATFORM" value="Win64" />
-        <option name="PROJECT_FILE_PATH" value="$PROJECT_DIR$/Spel5Project.uproject" />
-        <option name="CURRENT_LAUNCH_PROFILE" value="Local" />
-        <option name="EXECUTABLE_PATH" value="E:\UE_5.3\Engine\Binaries\Win64\UnrealEditor-Win64-DebugGame.exe" />
-        <option name="MANDATORY_PROGRAM_PARAMETERS" value=" &quot;E:\GitHub\Spel5Project\Spel5Project.uproject&quot;" />
+        <option name="EXECUTABLE_PATH" value="D:\Program Files\Epic Games\UE_5.3\Engine\Binaries\Win64\UnrealEditor-Win64-DebugGame.exe" />
+        <option name="WORKING_DIRECTORY" value="D:\Program Files\Epic Games\UE_5.3" />
+        <option name="MANDATORY_PROGRAM_PARAMETERS" value=" &quot;D:\Users\Lucas\OneDrive\Documents\GitHub\Spel5Project\Spel5Project.uproject&quot;" />
         <option name="CUSTOM_PROGRAM_PARAMETERS" value="" />
-        <option name="WORKING_DIRECTORY" value="E:\UE_5.3" />
-        <option name="PASS_PARENT_ENVS" value="1" />
-        <option name="USE_EXTERNAL_CONSOLE" value="0" />
-        <option name="TERMINAL_INTERACTION_BEHAVIOR" value="FORCE_CONSOLE" />
-      </configuration_1>
-      <configuration_2>
-        <option name="CONFIGURATION" value="DebugGame" />
-        <option name="PLATFORM" value="Win64" />
-        <option name="PROJECT_FILE_PATH" value="$PROJECT_DIR$/Spel5Project.uproject" />
-        <option name="CURRENT_LAUNCH_PROFILE" value="Local" />
-        <option name="EXECUTABLE_PATH" value="E:\GitHub\Spel5Project\Binaries\Win64\Spel5Project-Win64-DebugGame.exe" />
-        <option name="MANDATORY_PROGRAM_PARAMETERS" value="" />
-        <option name="CUSTOM_PROGRAM_PARAMETERS" value="" />
-        <option name="WORKING_DIRECTORY" value="E:\UE_5.3" />
         <option name="PASS_PARENT_ENVS" value="1" />
         <option name="USE_EXTERNAL_CONSOLE" value="0" />
         <option name="TERMINAL_INTERACTION_BEHAVIOR" value="FORCE_CONSOLE" />
       </configuration_2>
       <configuration_3>
-        <option name="CONFIGURATION" value="Development Editor" />
+        <option name="CONFIGURATION" value="DebugGame" />
         <option name="PLATFORM" value="Win64" />
-        <option name="PROJECT_FILE_PATH" value="$PROJECT_DIR$/Spel5Project.uproject" />
-        <option name="CURRENT_LAUNCH_PROFILE" value="Local" />
-        <option name="EXECUTABLE_PATH" value="E:\UE_5.3\Engine\Binaries\Win64\UnrealEditor.exe" />
-        <option name="MANDATORY_PROGRAM_PARAMETERS" value=" &quot;E:\GitHub\Spel5Project\Spel5Project.uproject&quot;" />
+        <option name="EXECUTABLE_PATH" value="D:\Users\Lucas\OneDrive\Documents\GitHub\Spel5Project\Binaries\Win64\Spel5Project-Win64-DebugGame.exe" />
+        <option name="WORKING_DIRECTORY" value="D:\Program Files\Epic Games\UE_5.3" />
+        <option name="MANDATORY_PROGRAM_PARAMETERS" value="" />
         <option name="CUSTOM_PROGRAM_PARAMETERS" value="" />
-        <option name="WORKING_DIRECTORY" value="E:\UE_5.3" />
         <option name="PASS_PARENT_ENVS" value="1" />
         <option name="USE_EXTERNAL_CONSOLE" value="0" />
         <option name="TERMINAL_INTERACTION_BEHAVIOR" value="FORCE_CONSOLE" />
       </configuration_3>
       <configuration_4>
-        <option name="CONFIGURATION" value="Development" />
+        <option name="CONFIGURATION" value="Development Editor" />
         <option name="PLATFORM" value="Win64" />
-        <option name="PROJECT_FILE_PATH" value="$PROJECT_DIR$/Spel5Project.uproject" />
-        <option name="CURRENT_LAUNCH_PROFILE" value="Local" />
-        <option name="EXECUTABLE_PATH" value="E:\GitHub\Spel5Project\Binaries\Win64\Spel5Project.exe" />
-        <option name="MANDATORY_PROGRAM_PARAMETERS" value="" />
+        <option name="EXECUTABLE_PATH" value="D:\Program Files\Epic Games\UE_5.3\Engine\Binaries\Win64\UnrealEditor.exe" />
+        <option name="WORKING_DIRECTORY" value="D:\Program Files\Epic Games\UE_5.3" />
+        <option name="MANDATORY_PROGRAM_PARAMETERS" value=" &quot;D:\Users\Lucas\OneDrive\Documents\GitHub\Spel5Project\Spel5Project.uproject&quot;" />
         <option name="CUSTOM_PROGRAM_PARAMETERS" value="" />
-        <option name="WORKING_DIRECTORY" value="E:\UE_5.3" />
         <option name="PASS_PARENT_ENVS" value="1" />
         <option name="USE_EXTERNAL_CONSOLE" value="0" />
         <option name="TERMINAL_INTERACTION_BEHAVIOR" value="FORCE_CONSOLE" />
       </configuration_4>
       <configuration_5>
-        <option name="CONFIGURATION" value="Shipping" />
+        <option name="CONFIGURATION" value="Development" />
         <option name="PLATFORM" value="Win64" />
-        <option name="PROJECT_FILE_PATH" value="$PROJECT_DIR$/Spel5Project.uproject" />
-        <option name="CURRENT_LAUNCH_PROFILE" value="Local" />
-        <option name="EXECUTABLE_PATH" value="E:\GitHub\Spel5Project\Binaries\Win64\Spel5Project-Win64-Shipping.exe" />
+        <option name="EXECUTABLE_PATH" value="D:\Users\Lucas\OneDrive\Documents\GitHub\Spel5Project\Binaries\Win64\Spel5Project.exe" />
+        <option name="WORKING_DIRECTORY" value="D:\Program Files\Epic Games\UE_5.3" />
         <option name="MANDATORY_PROGRAM_PARAMETERS" value="" />
         <option name="CUSTOM_PROGRAM_PARAMETERS" value="" />
-        <option name="WORKING_DIRECTORY" value="E:\UE_5.3" />
         <option name="PASS_PARENT_ENVS" value="1" />
         <option name="USE_EXTERNAL_CONSOLE" value="0" />
         <option name="TERMINAL_INTERACTION_BEHAVIOR" value="FORCE_CONSOLE" />
       </configuration_5>
-      <option name="PROJECT_FILE_PATH" value="$PROJECT_DIR$/Spel5Project.uproject" />
-      <option name="AUTO_SELECT_PRIORITY" value="10010" />
+      <configuration_6>
+        <option name="CONFIGURATION" value="Shipping" />
+        <option name="PLATFORM" value="Win64" />
+        <option name="EXECUTABLE_PATH" value="D:\Users\Lucas\OneDrive\Documents\GitHub\Spel5Project\Binaries\Win64\Spel5Project-Win64-Shipping.exe" />
+        <option name="WORKING_DIRECTORY" value="D:\Program Files\Epic Games\UE_5.3" />
+        <option name="MANDATORY_PROGRAM_PARAMETERS" value="" />
+        <option name="CUSTOM_PROGRAM_PARAMETERS" value="" />
+        <option name="PASS_PARENT_ENVS" value="1" />
+        <option name="USE_EXTERNAL_CONSOLE" value="0" />
+        <option name="TERMINAL_INTERACTION_BEHAVIOR" value="FORCE_CONSOLE" />
+      </configuration_6>
       <method v="2">
         <option name="Build" />
       </method>
@@ -158,6 +387,7 @@
       <workItem from="1715203230495" duration="625000" />
       <workItem from="1715246344043" duration="11735000" />
       <workItem from="1715268385334" duration="11441000" />
+      <workItem from="1715591720118" duration="6744000" />
     </task>
     <servers />
   </component>

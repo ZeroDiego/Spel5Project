@@ -8,7 +8,6 @@
 
 class UPhysicsConstraintComponent;
 class UPhysicsHandleComponent;
-class UInputComponent;
 
 UCLASS()
 class SPEL5PROJECT_API APushPullActor : public AActor
@@ -17,17 +16,6 @@ class SPEL5PROJECT_API APushPullActor : public AActor
 
 public:
 	APushPullActor();
-
-	virtual void BeginPlay() override;
-
-	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent);
-
-	// Updated method signatures to match the new input handling approach
-	void OnPullObjectPressed();
-	void OnReleaseObjectReleased();
-
-	// Method to set the player blueprint class from the blueprint editor
-	void SetPlayerBlueprintClass(TSubclassOf<ACharacter> NewPlayerBlueprintClass);
 
 	// Properties
 	UPROPERTY(EditAnywhere, Category = "Environment")
@@ -39,11 +27,21 @@ public:
 	UPROPERTY(EditAnywhere, Category = "Environment")
 	UPhysicsHandleComponent* PhysicsHandleComponent;
 
-protected:
-	virtual void Tick(float DeltaTime) override;
+	UPROPERTY(BlueprintReadWrite, Category = "Overlap")
+	bool bOwnerOverlapping;
 
-private:
-	bool bIsGrabbed = false;
-	FVector GrabLocation;
-	TSubclassOf<AActor> PlayerBlueprintClass;
+	UPROPERTY(BlueprintReadWrite, Category = "Overlap")
+	bool bCharOverlapping;
+
+	// Function to enable physics simulation
+	UFUNCTION(BlueprintCallable, Category = "Physics")
+	void EnablePhysics();
+
+	// Function to disable physics simulation
+	UFUNCTION(BlueprintCallable, Category = "Physics")
+	void DisablePhysics();
+
+protected:
+	// Called when the game starts or when spawned
+	virtual void BeginPlay() override;
 };
