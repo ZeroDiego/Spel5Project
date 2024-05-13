@@ -41,32 +41,13 @@ bool ADogCharacter::GetIsSatisfied() const
 
 void ADogCharacter::SetSatisfied(const bool NewIsSatisfied)
 {
+	UGameplayStatics::SpawnSoundAttached(EatSound, GetMesh(), TEXT("Eat"));
 	IsSatisfied = NewIsSatisfied;
-
-	if (IsSatisfied)
-	{
-		UGameplayStatics::SpawnSoundAttached(EatSound, GetMesh(), TEXT("Eat"));
-	}
 }
 
-bool ADogCharacter::GetIsSleeping() const
+void ADogCharacter::Sleep()
 {
-	return IsSleeping;
-}
-
-void ADogCharacter::SetIsSleeping(const bool NewIsSleeping)
-{
-	IsSleeping = NewIsSleeping;
-}
-
-bool ADogCharacter::GetHasEaten() const
-{
-	return HasEaten;
-}
-
-void ADogCharacter::SetHasEaten(const bool NewHasEaten)
-{
-	HasEaten = NewHasEaten;
+	IsSleeping = true;
 }
 
 void ADogCharacter::Alert()

@@ -25,13 +25,7 @@ public:
 	
 	void SetSatisfied(bool NewIsSatisfied);
 	
-	bool GetIsSleeping() const;
-	
-	void SetIsSleeping(bool NewIsSleeping);
-
-	bool GetHasEaten() const;
-	
-	void SetHasEaten(bool NewHasEaten);
+	void Sleep();
 
 	void Alert();
 	
@@ -52,9 +46,6 @@ private:
 
 	UPROPERTY(VisibleAnywhere)
 	bool IsSleeping;
-	
-	UPROPERTY(VisibleAnywhere)
-	bool HasEaten;
 
 	UPROPERTY(VisibleAnywhere)
 	bool IsAlert;

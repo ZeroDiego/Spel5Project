@@ -41,18 +41,3 @@ bool UDogComponent::GetDogIsSatisfied() const
 {
 	return DogCharacter->GetIsSatisfied();
 }
-
-void UDogComponent::SetDogIsSatisfied(const bool NewIsSatisfied) const
-{
-	DogCharacter->SetSatisfied(NewIsSatisfied);
-}
-
-bool UDogComponent::GetDogIsSleeping() const
-{
-	return DogCharacter->GetIsSleeping();
-}
-
-void UDogComponent::SetDogIsSleeping(const bool NewIsSleeping) const
-{
-	DogCharacter->SetIsSleeping(NewIsSleeping);
-}
