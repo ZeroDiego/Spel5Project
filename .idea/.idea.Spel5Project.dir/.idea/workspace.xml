@@ -8,20 +8,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="acdaa937-eda2-46c8-9ebf-42219eba813c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Spel5Project.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Spel5Project.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Diego/AI/BP_Patrol.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Diego/AI/BP_Patrol.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Diego/AI/BT_DogAI.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Diego/AI/BT_DogAI.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Diego/AI/BT_OwnerAI.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Diego/AI/BT_OwnerAI.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Erik/OwnerAi.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Erik/OwnerAi.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/ThirdPerson/Blueprints/BP_ThirdPersonCharacter.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/ThirdPerson/Blueprints/BP_ThirdPersonCharacter.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel/2/YD/613CD32GSKLIWRROHL03QL.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel/2/YD/613CD32GSKLIWRROHL03QL.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel/E/RO/L5I2QNX2LEK35N27MGTQIZ.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel/E/RO/L5I2QNX2LEK35N27MGTQIZ.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Spel5Project/BTTask_OpenDogWall.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Spel5Project/BTTask_OpenDogWall.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Spel5Project/DogCharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Spel5Project/DogCharacter.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Spel5Project/DogCharacter.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Spel5Project/DogCharacter.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Spel5Project/DogComponent.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Spel5Project/DogComponent.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Spel5Project/DogComponent.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Spel5Project/DogComponent.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Spel5Project/Mover.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Spel5Project/Mover.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Spel5Project/DiegoGrabber.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Spel5Project/DiegoGrabber.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Spel5Project/DiegoGrabber.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Spel5Project/DiegoGrabber.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +37,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "Uproject.Spel5Project.executor": "Run",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "diego",
     "ignore.virus.scanning.warn.message": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -158,6 +146,7 @@
       <workItem from="1715203230495" duration="625000" />
       <workItem from="1715246344043" duration="11735000" />
       <workItem from="1715268385334" duration="11441000" />
+      <workItem from="1715602970937" duration="4318000" />
     </task>
     <servers />
   </component>

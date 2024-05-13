@@ -25,8 +25,10 @@ public:
 	// Called every frame
 	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
 
+	/*
 	UFUNCTION(BlueprintCallable)
 	void Release();
+	*/
 
 	UFUNCTION(BlueprintCallable)
 	bool Grab();
@@ -40,8 +42,6 @@ private:
 
 	UPROPERTY(EditAnywhere)
 	float HoldDistance = 200;
-
-	ECollisionResponse OriginalCollisionResponse;
 
 	UPhysicsHandleComponent* GetPhysicsHandle() const;
 	bool GetGrabableInReach(FHitResult &OutHit) const;

@@ -31,11 +31,20 @@ void UDiegoGrabber::TickComponent(float DeltaTime, ELevelTick TickType, FActorCo
 
 	if (HandleComponent && HandleComponent->GetGrabbedComponent() != nullptr)
 	{
-		FVector TargetLocation = GetComponentLocation() + GetForwardVector() * HoldDistance;
-		HandleComponent->SetTargetLocationAndRotation(TargetLocation, GetComponentRotation());
+		UPrimitiveComponent* GrabbedComponent = Cast<UPrimitiveComponent>(HandleComponent->GetGrabbedComponent());
+		if (GrabbedComponent)
+		{
+			// Update the position of the grabbed actor to follow the grabber component
+			FVector TargetLocation = GetComponentLocation() + GetForwardVector() * HoldDistance;
+			FRotator TargetRotation = GetComponentRotation();
+
+			// Set the position and rotation of the grabbed actor
+			GrabbedComponent->SetWorldLocation(TargetLocation);
+			GrabbedComponent->SetWorldRotation(TargetRotation);
+		}
 	}
 }
-
+/*
 void UDiegoGrabber::Release()
 {
 	UPhysicsHandleComponent * HandleComponent = GetPhysicsHandle();
@@ -44,36 +53,50 @@ void UDiegoGrabber::Release()
 	{
 		HandleComponent->GetGrabbedComponent()->WakeAllRigidBodies();
 		HandleComponent->GetGrabbedComponent()->GetOwner()->Tags.Remove("Grabbed");
-		HandleComponent->GetGrabbedComponent()->SetCollisionResponseToChannel(ECC_WorldDynamic, OriginalCollisionResponse);
 		HandleComponent->ReleaseComponent();
 	}
 }
-
+*/
 bool UDiegoGrabber::Grab()
 {
-	UPhysicsHandleComponent *HandleComponent = GetPhysicsHandle();
-
-	if (HandleComponent == nullptr)
+	if (UPhysicsHandleComponent *HandleComponent = GetPhysicsHandle(); HandleComponent == nullptr)
 	{
 		return false;
 	}
-	FHitResult HitResult;
-	if (GetGrabableInReach(HitResult))
+	
+	if (FHitResult HitResult; GetGrabableInReach(HitResult))
 	{
 		UPrimitiveComponent* HitComponent = HitResult.GetComponent();
-		HitComponent->WakeAllRigidBodies();
-		HitResult.GetActor()->Tags.Add("Grabbed");
 
-		OriginalCollisionResponse = HitComponent->GetCollisionResponseToChannel(ECC_WorldDynamic);
-		HitComponent->SetCollisionResponseToChannel(ECC_WorldDynamic, ECR_Ignore);
-		
-		HandleComponent->GrabComponentAtLocationWithRotation(
-			HitComponent,
-			NAME_None,
-			HitResult.ImpactPoint,
-			GetComponentRotation());
+		// Attach the grabbed actor to the grabber component
+		if (AActor* HitActor = HitResult.GetActor())
+		{
+			// Store the original transform of the grabbed actor
+			FTransform OriginalTransform = HitActor->GetTransform();
 
-		return true;
+			// Disable physics simulation
+			HitComponent->SetSimulatePhysics(false);
+
+			// Detach the actor from its current parent
+			HitActor->DetachFromActor(FDetachmentTransformRules::KeepWorldTransform);
+
+			// Attach the actor to the grabber component
+			HitComponent->AttachToComponent(this, FAttachmentTransformRules::SnapToTargetIncludingScale);
+
+			// Add tag to indicate it's grabbed
+			HitActor->Tags.Add("Grabbed");
+
+			// Store the offset from the grabber component to the grabbed actor
+			FVector Offset = OriginalTransform.GetLocation() - GetComponentLocation();
+			FRotator RotationOffset = (OriginalTransform.GetRotation().Rotator() - GetComponentRotation()).GetNormalized();
+
+			// Re-parent the actor
+			HitActor->AttachToComponent(this, FAttachmentTransformRules::KeepWorldTransform);
+			HitActor->SetActorRelativeLocation(Offset);
+			HitActor->SetActorRelativeRotation(RotationOffset);
+
+			return true;
+		}
 	}
 
 	return false;
@@ -93,10 +116,10 @@ UPhysicsHandleComponent* UDiegoGrabber::GetPhysicsHandle() const
 
 bool UDiegoGrabber::GetGrabableInReach(FHitResult &OutHit) const
 {
-	FVector Start = GetComponentLocation();
-	FVector End = GetComponentLocation() + GetForwardVector() * MaxGrabDistance;
+	const FVector Start = GetComponentLocation();
+	const FVector End = GetComponentLocation() + GetForwardVector() * MaxGrabDistance;
 
-	FCollisionShape Sphere = FCollisionShape::MakeSphere(GrabRadius);
+	const FCollisionShape Sphere = FCollisionShape::MakeSphere(GrabRadius);
 	return GetWorld()->SweepSingleByChannel(
 		OutHit,
 		Start, End,
@@ -104,5 +127,4 @@ bool UDiegoGrabber::GetGrabableInReach(FHitResult &OutHit) const
 		ECC_GameTraceChannel1,
 		Sphere
 		);
-	
 }
