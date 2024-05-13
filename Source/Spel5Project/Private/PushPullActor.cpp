@@ -11,7 +11,6 @@ APushPullActor::APushPullActor()
     PrimaryActorTick.bCanEverTick = true;
 
     MeshComponent = CreateDefaultSubobject<UStaticMeshComponent>("MeshComponent");
-    MeshComponent->SetSimulatePhysics(true);
     MeshComponent->SetLinearDamping(2.f);
     SetRootComponent(MeshComponent);
 
@@ -37,14 +36,14 @@ void APushPullActor::Tick(float DeltaTime)
     Super::Tick(DeltaTime);
 
     // Check if both bOwnerOverlapping and bCharOverlapping are true
-    if (bOwnerOverlapping && bCharOverlapping)
+    if (bOwnerOverlapping)
     {
         DisablePhysics();
-    }
-    else
+    } else if (!bOwnerOverlapping && bCharOverlapping)
     {
         EnablePhysics();
     }
+
 }
 
 void APushPullActor::EnablePhysics()

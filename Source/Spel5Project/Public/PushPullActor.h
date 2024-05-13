@@ -17,6 +17,8 @@ class SPEL5PROJECT_API APushPullActor : public AActor
 public:
 	APushPullActor();
 
+	virtual void Tick(float DeltaTime) override;
+
 	// Properties
 	UPROPERTY(EditAnywhere, Category = "Environment")
 	UStaticMeshComponent* MeshComponent;
@@ -40,8 +42,4 @@ public:
 	// Function to disable physics simulation
 	UFUNCTION(BlueprintCallable, Category = "Physics")
 	void DisablePhysics();
-
-protected:
-	// Called when the game starts or when spawned
-	virtual void BeginPlay() override;
 };
