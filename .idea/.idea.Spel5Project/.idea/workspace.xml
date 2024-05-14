@@ -14,6 +14,7 @@
   <component name="ChangeListManager">
     <list default="true" id="cedf787e-1aec-4262-afa7-006c4f0ac410" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Spel5Project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Spel5Project/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Interactable/ExplodeRoom.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Interactable/ExplodeRoom.uasset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -183,7 +184,7 @@
       <updated>1712834769878</updated>
       <workItem from="1712834775270" duration="234000" />
       <workItem from="1715604094815" duration="5112000" />
-      <workItem from="1715679810068" duration="823000" />
+      <workItem from="1715679810068" duration="2116000" />
     </task>
     <servers />
   </component>
