@@ -11,7 +11,8 @@ APushPullActor::APushPullActor()
     PrimaryActorTick.bCanEverTick = true;
 
     MeshComponent = CreateDefaultSubobject<UStaticMeshComponent>("MeshComponent");
-    MeshComponent->SetLinearDamping(2.f);
+    MeshComponent->SetLinearDamping(0.f);
+    MeshComponent->SetAngularDamping(0.f);
     SetRootComponent(MeshComponent);
 
     // Create a physics constraint component to restrict the actor's movement.
