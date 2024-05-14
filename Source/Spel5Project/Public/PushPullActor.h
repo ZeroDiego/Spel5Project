@@ -2,7 +2,6 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
-#include "Kismet/GameplayStatics.h"
 #include "PushPullActor.generated.h"
 
 
@@ -34,6 +33,9 @@ public:
 
 	UPROPERTY(BlueprintReadWrite, Category = "Overlap")
 	bool bCharOverlapping;
+
+	UPROPERTY(BlueprintReadWrite, Category = "Pull")
+	bool bPullEnabled;
 
 	// Function to enable physics simulation
 	UFUNCTION(BlueprintCallable, Category = "Physics")
