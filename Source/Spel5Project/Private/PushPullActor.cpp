@@ -2,6 +2,8 @@
 #include "Engine/Engine.h"
 #include "PhysicsEngine/PhysicsConstraintComponent.h"
 #include "Components/StaticMeshComponent.h"
+#include "PhysicsEngine/PhysicsHandleComponent.h"
+#include "Components/BoxComponent.h"
 
 
 APushPullActor::APushPullActor()
@@ -9,7 +11,7 @@ APushPullActor::APushPullActor()
     PrimaryActorTick.bCanEverTick = true;
 
     MeshComponent = CreateDefaultSubobject<UStaticMeshComponent>("MeshComponent");
-    MeshComponent->SetLinearDamping(0.2f);
+    MeshComponent->SetLinearDamping(2.f);
     SetRootComponent(MeshComponent);
 
     // Create a physics constraint component to restrict the actor's movement.
@@ -24,14 +26,15 @@ APushPullActor::APushPullActor()
     PhysicsComponent->ComponentName1 = ComponentPropName;
     PhysicsComponent->SetupAttachment(MeshComponent);
 
+    PhysicsHandleComponent = CreateDefaultSubobject<UPhysicsHandleComponent>("PhysicsHandleComponent");
+
     Tags.Add("movable");
 }
 
 void APushPullActor::Tick(float DeltaTime)
 {
     Super::Tick(DeltaTime);
-
-    // Check if both bOwnerOverlapping and bCharOverlapping are true
+    
     if (bOwnerOverlapping)
     {
         DisablePhysics();
@@ -52,4 +55,4 @@ void APushPullActor::EnablePhysics()
 void APushPullActor::DisablePhysics()
 {
     MeshComponent->SetSimulatePhysics(false);
-}
+} 
