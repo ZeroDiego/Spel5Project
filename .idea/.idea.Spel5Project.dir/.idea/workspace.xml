@@ -7,12 +7,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="acdaa937-eda2-46c8-9ebf-42219eba813c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Spel5Project.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Spel5Project.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/NewBlueprint.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/NewBlueprint.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/9/MU/WV37Z3VMITG8QQ2OK0V6GO.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel1/9/MU/WV37Z3VMITG8QQ2OK0V6GO.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Spel5Project/Private/PushPullActor.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Spel5Project/Private/PushPullActor.cpp" afterDir="false" />
-    </list>
+    <list default="true" id="acdaa937-eda2-46c8-9ebf-42219eba813c" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -140,6 +135,7 @@
       <workItem from="1715602970937" duration="4318000" />
       <workItem from="1715687816350" duration="2048000" />
       <workItem from="1715690967578" duration="4960000" />
+      <workItem from="1715701820439" duration="433000" />
     </task>
     <servers />
   </component>

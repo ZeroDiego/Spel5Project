@@ -19,13 +19,13 @@ public:
 	virtual void Tick(float DeltaTime) override;
 
 	// Properties
-	UPROPERTY(EditAnywhere, Category = "Environment")
+	UPROPERTY(BlueprintReadWrite, Category = "Environment")
 	UStaticMeshComponent* MeshComponent;
 
-	UPROPERTY(EditAnywhere, Category = "Environment")
+	UPROPERTY(BlueprintReadWrite, Category = "Environment")
 	UPhysicsConstraintComponent* PhysicsComponent;
 
-	UPROPERTY(EditAnywhere, Category = "Environment")
+	UPROPERTY(BlueprintReadWrite, Category = "Environment")
 	UPhysicsHandleComponent* PhysicsHandleComponent;
 
 	UPROPERTY(BlueprintReadWrite, Category = "Overlap")
