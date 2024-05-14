@@ -10,56 +10,65 @@
 UCLASS()
 class SPEL5PROJECT_API ADogCharacter : public ACharacter
 {
-	GENERATED_BODY()
+    GENERATED_BODY()
 
 public:
-	// Sets default values for this character's properties
-	ADogCharacter();
+    // Sets default values for this character's properties
+    ADogCharacter();
 
 protected:
-	// Called when the game starts or when spawned
-	virtual void BeginPlay() override;
+    // Called when the game starts or when spawned
+    virtual void BeginPlay() override;
 
 public:
-	bool GetIsSatisfied() const;
-	
-	void SetSatisfied(bool NewIsSatisfied);
-	
-	void Sleep();
+    bool GetIsSatisfied() const;
 
-	void Alert();
-	
-	// Called every frame
-	virtual void Tick(float DeltaTime) override;
+    void SetSatisfied(bool NewIsSatisfied);
 
-	// Called to bind functionality to input
-	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
+    bool GetIsSleeping() const;
 
-	UMover* GetMover() const;
-	
-	UFUNCTION(BlueprintCallable)
-	void SetMover(UMover* NewMover);
-	
+    void SetIsSleeping(bool NewIsSleeping);
+
+    bool GetHasEaten() const;
+
+    void SetHasEaten(bool NewHasEaten);
+
+    void Alert();
+
+    // Called every frame
+    virtual void Tick(float DeltaTime) override;
+
+    // Called to bind functionality to input
+    virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
+
+    UMover* GetMover() const;
+
+    UFUNCTION(BlueprintCallable)
+    void SetMover(UMover* NewMover);
+
 private:
-	UPROPERTY(VisibleAnywhere)
-	bool IsSatisfied;
+    UPROPERTY(VisibleAnywhere)
+    bool IsSatisfied;
 
-	UPROPERTY(VisibleAnywhere)
-	bool IsSleeping;
+    UPROPERTY(VisibleAnywhere)
+    bool IsSleeping;
 
-	UPROPERTY(VisibleAnywhere)
-	bool IsAlert;
-	
-	UPROPERTY(EditAnywhere)
-	float SleepDelay = 1;
-	
-	UPROPERTY(EditAnywhere)
-	USoundBase* BarkSound;
+    UPROPERTY(VisibleAnywhere)
+    bool HasEaten;
 
-	UPROPERTY(EditAnywhere)
-	USoundBase* EatSound;
-	
-	FTimerHandle SleepTimer;
+    UPROPERTY(VisibleAnywhere)
+    bool IsAlert;
 
-	UMover* Mover;
+    UPROPERTY(EditAnywhere)
+    float SleepDelay = 1;
+
+    UPROPERTY(EditAnywhere)
+    USoundBase* BarkSound;
+
+    UPROPERTY(EditAnywhere)
+    USoundBase* EatSound;
+
+    FTimerHandle SleepTimer;
+
+    UMover* Mover;
 };
