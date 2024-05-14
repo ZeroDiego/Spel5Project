@@ -19,7 +19,7 @@ public:
 	virtual void Tick(float DeltaTime) override;
 
 	// Properties
-	UPROPERTY(BlueprintReadWrite, Category = "Environment")
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Environment")
 	UStaticMeshComponent* MeshComponent;
 
 	UPROPERTY(BlueprintReadWrite, Category = "Environment")
@@ -37,6 +37,9 @@ public:
 	UPROPERTY(BlueprintReadWrite, Category = "Pull")
 	bool bPullEnabled;
 
+	UPROPERTY(BlueprintReadWrite, Category = "Pull")
+	float ForceMagnitude;
+
 	// Function to enable physics simulation
 	UFUNCTION(BlueprintCallable, Category = "Physics")
 	void EnablePhysics();
@@ -44,4 +47,7 @@ public:
 	// Function to disable physics simulation
 	UFUNCTION(BlueprintCallable, Category = "Physics")
 	void DisablePhysics();
+
+	UFUNCTION(BlueprintCallable, Category = "Physics")
+	void PushBackwards();
 };

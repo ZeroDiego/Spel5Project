@@ -43,7 +43,6 @@ void APushPullActor::Tick(float DeltaTime)
     } else if (!bOwnerOverlapping && bCharOverlapping)
     {
         EnablePhysics();
-        bPullEnabled = true;
     }
 
 }
@@ -51,9 +50,17 @@ void APushPullActor::Tick(float DeltaTime)
 void APushPullActor::EnablePhysics()
 {
     MeshComponent->SetSimulatePhysics(true);
+    UE_LOG(LogTemp, Warning, TEXT("Physics Enabled"));
 }
 
 void APushPullActor::DisablePhysics()
 {
     MeshComponent->SetSimulatePhysics(false);
-} 
+    UE_LOG(LogTemp, Warning, TEXT("Physics Disabled"));
+}
+
+void APushPullActor::PushBackwards()
+{
+    FVector ForceDirection = -MeshComponent->GetForwardVector();
+    MeshComponent->AddForce(ForceDirection * ForceMagnitude);
+}
