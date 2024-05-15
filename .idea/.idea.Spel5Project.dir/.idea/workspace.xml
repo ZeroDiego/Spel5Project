@@ -8,13 +8,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="acdaa937-eda2-46c8-9ebf-42219eba813c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Spel5Project.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Spel5Project.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Diego/Blueprints/BP_DiegoGameMode.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Diego/Blueprints/BP_DiegoGameMode.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Lucas/BP_DogMeat.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Lucas/BP_DogMeat.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/ThirdPerson/Blueprints/BP_ThirdPersonCharacter.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/ThirdPerson/Blueprints/BP_ThirdPersonCharacter.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel/5/2U/HA8O9PJLGH6J5MQ0S5HRHZ.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel/5/2U/HA8O9PJLGH6J5MQ0S5HRHZ.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel/9/TR/E30IZM33B3A9JZYV1YJGS4.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel/9/TR/E30IZM33B3A9JZYV1YJGS4.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel/B/CV/YI02HCKZFCAAFUWSKCS516.uasset" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/Spel5Project/DiegoGrabber.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Spel5Project/DiegoGrabber.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/Spel5Project/DiegoGrabber.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Spel5Project/DiegoGrabber.h" afterDir="false" />
     </list>
@@ -31,16 +24,20 @@
   &quot;associatedIndex&quot;: 8
 }</component>
   <component name="ProjectId" id="2fd2eZ8UDmSNVznS9sGyhxS7oib" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "Uproject.Spel5Project.executor": "Run",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "diego",
     "ignore.virus.scanning.warn.message": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -145,6 +142,11 @@
       <workItem from="1715001606896" duration="1434000" />
       <workItem from="1715098137687" duration="3000" />
       <workItem from="1715127423559" duration="1803000" />
+      <workItem from="1715153657969" duration="6695000" />
+      <workItem from="1715203230495" duration="625000" />
+      <workItem from="1715246344043" duration="11735000" />
+      <workItem from="1715268385334" duration="11441000" />
+      <workItem from="1715602970937" duration="4318000" />
     </task>
     <servers />
   </component>
@@ -153,6 +155,7 @@
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
 </project>
