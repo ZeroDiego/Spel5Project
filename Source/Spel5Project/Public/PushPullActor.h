@@ -16,16 +16,16 @@ class SPEL5PROJECT_API APushPullActor : public AActor
 public:
 	APushPullActor();
 
-	virtual void Tick(float DeltaTime) override;
+	//virtual void Tick(float DeltaTime) override;
 
 	// Properties
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Environment")
 	UStaticMeshComponent* MeshComponent;
 
-	UPROPERTY(BlueprintReadWrite, Category = "Environment")
+	UPROPERTY(EditAnywhere, Category = "Environment")
 	UPhysicsConstraintComponent* PhysicsComponent;
 
-	UPROPERTY(BlueprintReadWrite, Category = "Environment")
+	UPROPERTY(EditAnywhere, Category = "Environment")
 	UPhysicsHandleComponent* PhysicsHandleComponent;
 
 	UPROPERTY(BlueprintReadWrite, Category = "Overlap")
@@ -41,13 +41,13 @@ public:
 	float ForceMagnitude;
 
 	// Function to enable physics simulation
-	UFUNCTION(BlueprintCallable, Category = "Physics")
+	UFUNCTION(BlueprintCallable, Category = "PhysicsFunctions")
 	void EnablePhysics();
 
 	// Function to disable physics simulation
-	UFUNCTION(BlueprintCallable, Category = "Physics")
+	UFUNCTION(BlueprintCallable, Category = "PhysicsFunctions")
 	void DisablePhysics();
 
-	UFUNCTION(BlueprintCallable, Category = "Physics")
+	UFUNCTION(BlueprintCallable, Category = "PhysicsFunctions")
 	void PushBackwards();
 };

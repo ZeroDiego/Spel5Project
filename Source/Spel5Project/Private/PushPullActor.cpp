@@ -19,6 +19,7 @@ APushPullActor::APushPullActor()
     PhysicsComponent = CreateDefaultSubobject<UPhysicsConstraintComponent>("PhysicsComponent");
     PhysicsComponent->SetLinearXLimit(LCM_Free, 0.f);
     PhysicsComponent->SetLinearYLimit(LCM_Free, 0.f);
+    PhysicsComponent->SetLinearZLimit(LCM_Locked, 0.f);
     PhysicsComponent->SetAngularSwing1Limit(ACM_Locked, 0.f);
     PhysicsComponent->SetAngularSwing2Limit(ACM_Locked, 0.f);
     PhysicsComponent->SetAngularTwistLimit(ACM_Locked, 0.f);
@@ -32,20 +33,11 @@ APushPullActor::APushPullActor()
     Tags.Add("movable");
 }
 
-void APushPullActor::Tick(float DeltaTime)
+/*void APushPullActor::Tick(float DeltaTime)
 {
     Super::Tick(DeltaTime);
-    
-    if (bOwnerOverlapping)
-    {
-        DisablePhysics();
-        bPullEnabled = false;
-    } else if (!bOwnerOverlapping && bCharOverlapping)
-    {
-        EnablePhysics();
-    }
 
-}
+}*/
 
 void APushPullActor::EnablePhysics()
 {
