@@ -30,15 +30,8 @@ void UBTService_PlayerLocationIfSeen::TickNode(UBehaviorTreeComponent& OwnerComp
 	}
 
 	ADogAIController* DogAIController = Cast<ADogAIController>(OwnerComp.GetOwner());
-	AOwnerCharacter* OwnerCharacter = Cast<AOwnerCharacter>(OwnerComp.GetAIOwner()->GetPawn());
 
 	const float DistanceToPlayer = FVector::Distance(PlayerPawn->GetActorLocation(), OwnerComp.GetAIOwner()->GetPawn()->GetActorLocation());
-
-	if (OwnerCharacter != nullptr && OwnerCharacter->GetIsAlerted())
-	{
-		OwnerComp.GetBlackboardComponent()->SetValueAsObject(GetSelectedBlackboardKey(), PlayerPawn);
-		return;
-	}
 
 	if (DogAIController != nullptr)
 	{
