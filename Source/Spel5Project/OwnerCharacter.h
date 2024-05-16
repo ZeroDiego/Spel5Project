@@ -22,10 +22,13 @@ protected:
 public:
 	bool GetIsAlerted() const;
 
+	UFUNCTION(BlueprintCallable)
 	void SetIsAlerted(bool NewIsAlerted);
-	
+
+	UFUNCTION(BlueprintCallable)
 	FVector GetLastKnownPlayerLocation() const;
 
+	UFUNCTION(BlueprintCallable)
 	void SetLastKnownPlayerLocation(const FVector& NewLastKnownPlayerLocation);
 
 	void KillPlayer() const;

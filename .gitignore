@@ -72,6 +72,3 @@ Plugins/*/Intermediate/*
 
 # Cache files for the editor to use
 DerivedDataCache/*
-
-# JetBrains Rider workspace file
-.idea/.idea.Spel5Project.dir/.idea/workspace.xml
