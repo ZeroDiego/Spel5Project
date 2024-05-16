@@ -13,21 +13,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cedf787e-1aec-4262-afa7-006c4f0ac410" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Spel5Project.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Spel5Project.dir/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Spel5Project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Spel5Project/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Erik/OwnerAi.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Erik/OwnerAi.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Interactable/ExplodeButton.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Interactable/ExplodeButton.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Interactable/StoveFan.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Interactable/StoveFan.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Interactable/StoveFanButton.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Interactable/StoveFanButton.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Adin/Levels/AdinTestLevel/A/AF/CWJ5MM82TOC94KZ5AP90TT.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Adin/Levels/AdinTestLevel/A/AF/CWJ5MM82TOC94KZ5AP90TT.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel/2/09/B2DE84DY1LDKEILSW6WWZ7.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel/2/09/B2DE84DY1LDKEILSW6WWZ7.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel/9/TR/E30IZM33B3A9JZYV1YJGS4.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel/9/TR/E30IZM33B3A9JZYV1YJGS4.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel/B/TL/3C4JD96TYMVPZVH8T61OXL.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel/B/TL/3C4JD96TYMVPZVH8T61OXL.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel/D/S2/BWOKGHK81N7DRM1U9P6KP4.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel/D/S2/BWOKGHK81N7DRM1U9P6KP4.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel/E/RO/L5I2QNX2LEK35N27MGTQIZ.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/DiegoJacobLevel/E/RO/L5I2QNX2LEK35N27MGTQIZ.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/ErikLevel/A/U6/9K5ZY6Y1SD5WZCMOM22VDP.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/ErikLevel/A/U6/9K5ZY6Y1SD5WZCMOM22VDP.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/JacobTest/D/9Q/HD4DGXIZ56KF25L2ASFBIX.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/JacobTest/D/9Q/HD4DGXIZ56KF25L2ASFBIX.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/JacobTest3d/1/8F/U8NWP3Y8XBXD69SDDCOLR0.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/JacobTest3d/1/8F/U8NWP3Y8XBXD69SDDCOLR0.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/LevelWithLighting/0/RC/4QWDOUL1EMTA7N51TDJ38V.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Diego/Levels/LevelWithLighting/0/RC/4QWDOUL1EMTA7N51TDJ38V.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/BP_PushPullActor.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/BP_PushPullActor.uasset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +39,7 @@
     "C++ Project.Spel5Project.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "ÖdenFunkafyfan",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -61,9 +49,9 @@
   },
   "keyToStringList": {
     "rider.external.source.directories": [
-      "C:\\Users\\Theka\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache",
-      "C:\\Users\\Theka\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache",
-      "C:\\Users\\Theka\\AppData\\Local\\Symbols\\src"
+      "C:\\Users\\luod6400\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache",
+      "C:\\Users\\luod6400\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache",
+      "C:\\Users\\luod6400\\AppData\\Local\\Symbols\\src"
     ]
   }
 }]]></component>
@@ -129,18 +117,6 @@
         <option name="USE_EXTERNAL_CONSOLE" value="0" />
         <option name="TERMINAL_INTERACTION_BEHAVIOR" value="FORCE_CONSOLE" />
       </configuration_5>
-      <configuration_6>
-        <option name="CONFIGURATION" value="" />
-        <option name="PLATFORM" value="" />
-        <option name="PROJECT_FILE_PATH" value="$PROJECT_DIR$/Intermediate/ProjectFiles/Spel5Project.vcxproj" />
-        <option name="CURRENT_LAUNCH_PROFILE" value="Local" />
-        <option name="EXE_PATH" value="$(TargetPath)" />
-        <option name="PROGRAM_PARAMETERS" value="" />
-        <option name="WORKING_DIRECTORY" value="$(ProjectDir)" />
-        <option name="PASS_PARENT_ENVS" value="1" />
-        <option name="USE_EXTERNAL_CONSOLE" value="0" />
-        <option name="TERMINAL_INTERACTION_BEHAVIOR" value="AUTO_DETECT" />
-      </configuration_6>
       <option name="DEFAULT_PROJECT_PATH" value="$PROJECT_DIR$/Intermediate/ProjectFiles/Spel5Project.vcxproj" />
       <option name="AUTO_SELECT_PRIORITY" value="0" />
       <method v="2">
@@ -209,6 +185,7 @@
       <updated>1712834769878</updated>
       <workItem from="1712834775270" duration="234000" />
       <workItem from="1715604094815" duration="3331000" />
+      <workItem from="1715869242592" duration="1381000" />
     </task>
     <servers />
   </component>
