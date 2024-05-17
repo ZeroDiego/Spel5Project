@@ -23,7 +23,7 @@ void UDogTrigger::TickComponent(float DeltaTime, ELevelTick TickType, FActorComp
 	AActor* Actor = GetMeatActor();
 	if (Actor != nullptr)
 	{
-		DogCharacter->SetSatisfied(true);
+		DogCharacter->SetHasEaten(true);
 		Actor->Destroy();
 	}
 }
