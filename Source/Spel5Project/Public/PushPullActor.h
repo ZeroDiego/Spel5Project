@@ -34,12 +34,6 @@ public:
 	UPROPERTY(BlueprintReadWrite, Category = "Overlap")
 	bool bCharOverlapping;
 
-	UPROPERTY(BlueprintReadWrite, Category = "Pull")
-	bool bPullEnabled;
-
-	UPROPERTY(BlueprintReadWrite, Category = "Pull")
-	float ForceMagnitude;
-
 	// Function to enable physics simulation
 	UFUNCTION(BlueprintCallable, Category = "PhysicsFunctions")
 	void EnablePhysics();
@@ -47,7 +41,4 @@ public:
 	// Function to disable physics simulation
 	UFUNCTION(BlueprintCallable, Category = "PhysicsFunctions")
 	void DisablePhysics();
-
-	UFUNCTION(BlueprintCallable, Category = "PhysicsFunctions")
-	void PushBackwards();
 };
