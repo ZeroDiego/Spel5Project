@@ -26,17 +26,14 @@ void UDiegoGrabber::BeginPlay()
 void UDiegoGrabber::TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction)
 {
 	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
-	
-	UPhysicsHandleComponent *HandleComponent = GetPhysicsHandle();
 
-	if (HandleComponent && HandleComponent->GetGrabbedComponent() != nullptr)
+	if (const UPhysicsHandleComponent *HandleComponent = GetPhysicsHandle(); HandleComponent && HandleComponent->GetGrabbedComponent() != nullptr)
 	{
-		UPrimitiveComponent* GrabbedComponent = Cast<UPrimitiveComponent>(HandleComponent->GetGrabbedComponent());
-		if (GrabbedComponent)
+		if (UPrimitiveComponent* GrabbedComponent = Cast<UPrimitiveComponent>(HandleComponent->GetGrabbedComponent()))
 		{
 			// Update the position of the grabbed actor to follow the grabber component
-			FVector TargetLocation = GetComponentLocation() + GetForwardVector() * HoldDistance;
-			FRotator TargetRotation = GetComponentRotation();
+			const FVector TargetLocation = GetComponentLocation() + GetForwardVector() * HoldDistance;
+			const FRotator TargetRotation = GetComponentRotation();
 
 			// Set the position and rotation of the grabbed actor
 			GrabbedComponent->SetWorldLocation(TargetLocation);
@@ -74,23 +71,23 @@ bool UDiegoGrabber::Grab()
 			// Store the original transform of the grabbed actor
 			FTransform OriginalTransform = HitActor->GetTransform();
 
-			// Disable physics simulation
+			// Disable physics simulation on the grabbed actor
 			HitComponent->SetSimulatePhysics(false);
 
-			// Detach the actor from its current parent
+			// Detach the grabbed actor from its current parent
 			HitActor->DetachFromActor(FDetachmentTransformRules::KeepWorldTransform);
 
-			// Attach the actor to the grabber component
+			// Attach the grabbed actor to this grabber component
 			HitComponent->AttachToComponent(this, FAttachmentTransformRules::SnapToTargetIncludingScale);
 
-			// Add tag to indicate it's grabbed
+			// Add tag to the grabbed actor to indicate it's being grabbed
 			HitActor->Tags.Add("Grabbed");
 
-			// Store the offset from the grabber component to the grabbed actor
+			// Store the offset from this grabber component to the grabbed actor
 			FVector Offset = OriginalTransform.GetLocation() - GetComponentLocation();
 			FRotator RotationOffset = (OriginalTransform.GetRotation().Rotator() - GetComponentRotation()).GetNormalized();
 
-			// Re-parent the actor
+			// Re-parent the grabbed actor to this grabber component
 			HitActor->AttachToComponent(this, FAttachmentTransformRules::KeepWorldTransform);
 			HitActor->SetActorRelativeLocation(Offset);
 			HitActor->SetActorRelativeRotation(RotationOffset);
