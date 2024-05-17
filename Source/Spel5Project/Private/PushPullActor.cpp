@@ -50,9 +50,3 @@ void APushPullActor::DisablePhysics()
     MeshComponent->SetSimulatePhysics(false);
     UE_LOG(LogTemp, Warning, TEXT("Physics Disabled"));
 }
-
-void APushPullActor::PushBackwards()
-{
-    FVector ForceDirection = -MeshComponent->GetForwardVector();
-    MeshComponent->AddForce(ForceDirection * ForceMagnitude);
-}
