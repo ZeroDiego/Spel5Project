@@ -1,4 +1,4 @@
-// Fill out your copyright notice in the Description page of Project Settings.
+// Diego Puentes Varas dipu6255
 
 #include "DiegoGrabber.h"
 #include "Engine/World.h"
@@ -113,9 +113,11 @@ UPhysicsHandleComponent* UDiegoGrabber::GetPhysicsHandle() const
 
 bool UDiegoGrabber::GetGrabableInReach(FHitResult &OutHit) const
 {
+	//Defines variables used to calculate the range of the grab.
 	const FVector Start = GetComponentLocation();
 	const FVector End = GetComponentLocation() + GetForwardVector() * MaxGrabDistance;
 
+	//Creates sphere which is used to check if anything is inside it. Returns true if something is.
 	const FCollisionShape Sphere = FCollisionShape::MakeSphere(GrabRadius);
 	return GetWorld()->SweepSingleByChannel(
 		OutHit,

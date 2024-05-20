@@ -1,4 +1,4 @@
-// Fill out your copyright notice in the Description page of Project Settings.
+// Diego Puentes Varas dipu6255
 
 #pragma once
 
@@ -6,7 +6,6 @@
 #include "Components/SceneComponent.h"
 #include "PhysicsEngine/PhysicsHandleComponent.h"
 #include "DiegoGrabber.generated.h"
-
 
 UCLASS(ClassGroup = (Custom), meta=(BlueprintSpawnableComponent))
 class SPEL5PROJECT_API UDiegoGrabber : public USceneComponent
