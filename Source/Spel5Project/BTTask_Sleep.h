@@ -1,21 +1,21 @@
-// Diego Puentes Varas dipu6255
+// Fill out your copyright notice in the Description page of Project Settings.
 
 #pragma once
 
 #include "CoreMinimal.h"
 #include "BehaviorTree/BTTaskNode.h"
-#include "BTTask_Alert.generated.h"
+#include "BTTask_Sleep.generated.h"
 
 /**
  * 
  */
 UCLASS()
-class SPEL5PROJECT_API UBTTask_Alert : public UBTTaskNode
+class SPEL5PROJECT_API UBTTask_Sleep : public UBTTaskNode
 {
 	GENERATED_BODY()
 
 public:
-	UBTTask_Alert();
+	UBTTask_Sleep();
 
 protected:
 	virtual EBTNodeResult::Type ExecuteTask(UBehaviorTreeComponent& OwnerComp, uint8* NodeMemory) override;

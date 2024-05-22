@@ -1,12 +1,10 @@
-// Fill out your copyright notice in the Description page of Project Settings.
-
+// Diego Puentes Varas dipu6255
 
 #include "BTTask_Alert.h"
 #include "AIController.h"
 #include "DogCharacter.h"
 #include "OwnerCharacter.h"
 #include "Engine.h"
-#include "OwnerAIController.h"
 #include "Logging/LogMacros.h"
 #include "BehaviorTree/BlackboardComponent.h"
 
