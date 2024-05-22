@@ -1,4 +1,4 @@
-// Fill out your copyright notice in the Description page of Project Settings.
+// Diego Puentes Varas dipu6255
 
 #pragma once
 
@@ -12,11 +12,9 @@ class SPEL5PROJECT_API AOwnerCharacter : public ACharacter
 	GENERATED_BODY()
 
 public:
-	// Sets default values for this character's properties
 	AOwnerCharacter();
 
 protected:
-	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
 public:
@@ -31,12 +29,10 @@ public:
 	UFUNCTION(BlueprintCallable)
 	void SetLastKnownPlayerLocation(const FVector& NewLastKnownPlayerLocation);
 
-	void KillPlayer() const;
+	//void KillPlayer() const;
 	
-	// Called every frame
 	virtual void Tick(float DeltaTime) override;
-
-	// Called to bind functionality to input
+	
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
 private:
