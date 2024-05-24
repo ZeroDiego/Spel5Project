@@ -1,16 +1,16 @@
-// Diego Puentes Varas dipu6255
+﻿// Diego Puentes Varas dipu6255
 
-#include "BTTask_Sleep.h"
+#include "BTTask_Eat.h"
 #include "AIController.h"
 #include "DogCharacter.h"
 #include "BehaviorTree/BlackboardComponent.h"
 
-UBTTask_Sleep::UBTTask_Sleep()
+UBTTask_Eat::UBTTask_Eat()
 {
-	NodeName = TEXT("Sleep");
+	NodeName = TEXT("Eat");
 }
 
-EBTNodeResult::Type UBTTask_Sleep::ExecuteTask(UBehaviorTreeComponent& OwnerComp, uint8* NodeMemory)
+EBTNodeResult::Type UBTTask_Eat::ExecuteTask(UBehaviorTreeComponent& OwnerComp, uint8* NodeMemory)
 {
 	Super::ExecuteTask(OwnerComp, NodeMemory);
 
@@ -25,6 +25,6 @@ EBTNodeResult::Type UBTTask_Sleep::ExecuteTask(UBehaviorTreeComponent& OwnerComp
 		return EBTNodeResult::Failed;
 	}
 
-	DogCharacter->SetIsSleeping(true);
+	DogCharacter->SetIsDoorOpen(true);
 	return EBTNodeResult::Succeeded;
 }

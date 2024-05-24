@@ -24,7 +24,7 @@ void ADogAIController::Tick(float DeltaTime)
 void ADogAIController::SetSatisfied() const
 {
 	if (ADogCharacter* ControlledCharacter = Cast<ADogCharacter>(GetPawn()); ControlledCharacter != nullptr)
-		ControlledCharacter->SetSatisfied(true);
+		ControlledCharacter->SetIsSatisfied(true);
 }
 
 float ADogAIController::GetVisionRange() const

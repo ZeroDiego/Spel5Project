@@ -44,7 +44,17 @@ bool UDogComponent::GetDogIsSatisfied() const
 
 void UDogComponent::SetDogIsSatisfied(const bool NewIsSatisfied) const
 {
-	DogCharacter->SetSatisfied(NewIsSatisfied);
+	DogCharacter->SetIsSatisfied(NewIsSatisfied);
+}
+
+bool UDogComponent::GetDogIsEating() const
+{
+	return DogCharacter->GetIsEating();
+}
+
+void UDogComponent::SetDogIsEating(const bool NewIsEating) const
+{
+	DogCharacter->SetIsEating(NewIsEating);
 }
 
 bool UDogComponent::GetDogIsSleeping() const
