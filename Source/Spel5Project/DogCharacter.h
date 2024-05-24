@@ -21,19 +21,32 @@ protected:
 	virtual void BeginPlay() override;
 
 public:
+	UFUNCTION(Blueprintable)
+	bool GetIsBarking() const;
+	
+	void SetIsBarking(bool NewIsBarking);
+	
+	UFUNCTION(Blueprintable)
 	bool GetIsSatisfied() const;
 	
-	void SetSatisfied(bool NewIsSatisfied);
+	void SetIsSatisfied(bool NewIsSatisfied);
+
+	UFUNCTION(Blueprintable)
+	bool GetIsEating() const;
 	
+	void SetIsEating(bool NewIsEating);
+
+	UFUNCTION(Blueprintable)
+	bool GetIsDoorOpen() const;
+	
+	void SetIsDoorOpen(bool NewIsDoorOpen);
+
+	UFUNCTION(Blueprintable)
 	bool GetIsSleeping() const;
 	
 	void SetIsSleeping(bool NewIsSleeping);
 
-	bool GetHasEaten() const;
-	
-	void SetHasEaten(bool NewHasEaten);
-
-	void Alert();
+	void Alert() const;
 	
 	virtual void Tick(float DeltaTime) override;
 	
@@ -46,13 +59,19 @@ public:
 	
 private:
 	UPROPERTY(VisibleAnywhere)
+	bool IsBarking;
+	
+	UPROPERTY(VisibleAnywhere)
 	bool IsSatisfied;
+	
+	UPROPERTY(VisibleAnywhere)
+	bool IsEating;
+
+	UPROPERTY(VisibleAnywhere)
+	bool IsDoorOpen;
 
 	UPROPERTY(VisibleAnywhere)
 	bool IsSleeping;
-	
-	UPROPERTY(VisibleAnywhere)
-	bool HasEaten;
 
 	UPROPERTY(VisibleAnywhere)
 	bool IsAlert;

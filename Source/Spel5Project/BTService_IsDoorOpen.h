@@ -4,18 +4,18 @@
 
 #include "CoreMinimal.h"
 #include "BehaviorTree/Services/BTService_BlackboardBase.h"
-#include "BTService_HasEaten.generated.h"
+#include "BTService_IsDoorOpen.generated.h"
 
 /**
  * 
  */
 UCLASS()
-class SPEL5PROJECT_API UBTService_HasEaten : public UBTService_BlackboardBase
+class SPEL5PROJECT_API UBTService_IsDoorOpen : public UBTService_BlackboardBase
 {
 	GENERATED_BODY()
 
 public:
-	UBTService_HasEaten();
+	UBTService_IsDoorOpen();
 
 protected:
 	virtual void TickNode(UBehaviorTreeComponent& OwnerComp, uint8* NodeMemory, float DeltaSeconds) override;
