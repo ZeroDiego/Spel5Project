@@ -29,6 +29,7 @@ EBTNodeResult::Type UBTTask_Alert::ExecuteTask(UBehaviorTreeComponent& OwnerComp
 	}
 
 	DogCharacter->Alert();
+	DogCharacter->SetIsBarking(true);
 
 	const UWorld* World = GetWorld();
 	for (TActorIterator<AOwnerCharacter> It(World); It; ++It)

@@ -27,14 +27,45 @@ void ADogCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCompon
 
 }
 
+bool ADogCharacter::GetIsBarking() const
+{
+	return IsBarking;
+}
+
+void ADogCharacter::SetIsBarking(const bool NewIsBarking)
+{
+	IsBarking = NewIsBarking;
+}
+
 bool ADogCharacter::GetIsSatisfied() const
 {
 	return IsSatisfied;
 }
 
-void ADogCharacter::SetSatisfied(const bool NewIsSatisfied)
+void ADogCharacter::SetIsSatisfied(const bool NewIsSatisfied)
 {
 	IsSatisfied = NewIsSatisfied;
+}
+
+bool ADogCharacter::GetIsEating() const
+{
+	return IsEating;
+}
+
+void ADogCharacter::SetIsEating(const bool NewIsEating)
+{
+	IsEating = NewIsEating;
+	UGameplayStatics::SpawnSoundAttached(EatSound, GetMesh(), TEXT("Eat"));
+}
+
+bool ADogCharacter::GetIsDoorOpen() const
+{
+	return IsDoorOpen;
+}
+
+void ADogCharacter::SetIsDoorOpen(const bool NewIsDoorOpen)
+{
+	IsDoorOpen = NewIsDoorOpen;
 }
 
 bool ADogCharacter::GetIsSleeping() const
@@ -47,20 +78,8 @@ void ADogCharacter::SetIsSleeping(const bool NewIsSleeping)
 	IsSleeping = NewIsSleeping;
 }
 
-bool ADogCharacter::GetHasEaten() const
+void ADogCharacter::Alert() const
 {
-	return HasEaten;
-}
-
-void ADogCharacter::SetHasEaten(const bool NewHasEaten)
-{
-	HasEaten = NewHasEaten;
-	UGameplayStatics::SpawnSoundAttached(EatSound, GetMesh(), TEXT("Eat"));
-}
-
-void ADogCharacter::Alert()
-{
-	IsAlert = true;
 	UGameplayStatics::SpawnSoundAttached(BarkSound, GetMesh(), TEXT("Bark"));
 }
 

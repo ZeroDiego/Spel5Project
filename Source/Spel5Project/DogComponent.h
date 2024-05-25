@@ -34,6 +34,12 @@ public:
 	void SetDogIsSatisfied(const bool NewIsSatisfied) const;
 
 	UFUNCTION(BlueprintCallable)
+	bool GetDogIsEating() const;
+
+	UFUNCTION(BlueprintCallable)
+	void SetDogIsEating(const bool NewIsEating) const;
+
+	UFUNCTION(BlueprintCallable)
 	bool GetDogIsSleeping() const;
 
 	UFUNCTION(BlueprintCallable)
