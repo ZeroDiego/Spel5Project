@@ -44,6 +44,12 @@ public:
 
 	UFUNCTION(BlueprintCallable)
 	void SetDogIsSleeping(const bool NewIsSleeping) const;
+
+	UFUNCTION(BlueprintCallable)
+	UUserWidget* GetMeatWidget() const;
+	
+	UFUNCTION(BlueprintCallable)
+	void SetMeatWidget(UUserWidget* NewMeatWidget) const;
 	
 private:
 	ADogCharacter* DogCharacter;
