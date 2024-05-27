@@ -21,27 +21,27 @@ protected:
 	virtual void BeginPlay() override;
 
 public:
-	UFUNCTION(Blueprintable)
+	UFUNCTION(BlueprintCallable)
 	bool GetIsBarking() const;
 	
 	void SetIsBarking(bool NewIsBarking);
 	
-	UFUNCTION(Blueprintable)
+	UFUNCTION(BlueprintCallable)
 	bool GetIsSatisfied() const;
 	
 	void SetIsSatisfied(bool NewIsSatisfied);
 
-	UFUNCTION(Blueprintable)
+	UFUNCTION(BlueprintCallable)
 	bool GetIsEating() const;
 	
 	void SetIsEating(bool NewIsEating);
 
-	UFUNCTION(Blueprintable)
+	UFUNCTION(BlueprintCallable)
 	bool GetIsDoorOpen() const;
 	
 	void SetIsDoorOpen(bool NewIsDoorOpen);
 
-	UFUNCTION(Blueprintable)
+	UFUNCTION(BlueprintCallable)
 	bool GetIsSleeping() const;
 	
 	void SetIsSleeping(bool NewIsSleeping);
