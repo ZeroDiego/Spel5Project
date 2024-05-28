@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "Components/CapsuleComponent.h"
+#include "Blueprint/UserWidget.h"
 #include "DogCharacter.h"
 #include "DogTrigger.generated.h"
 
@@ -36,5 +37,4 @@ private:
 	ADogCharacter* DogCharacter;
 	
 	AActor* GetMeatActor() const;
-	
 };
