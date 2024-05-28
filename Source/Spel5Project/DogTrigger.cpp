@@ -2,6 +2,8 @@
 
 
 #include "DogTrigger.h"
+#include "Engine/Engine.h"
+#include "Engine/GameViewportClient.h"
 
 UDogTrigger::UDogTrigger()
 {
@@ -20,10 +22,14 @@ void UDogTrigger::TickComponent(float DeltaTime, ELevelTick TickType, FActorComp
 {
 	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
 
-	AActor* Actor = GetMeatActor();
-	if (Actor != nullptr)
+	if (AActor* Actor = GetMeatActor(); Actor != nullptr)
 	{
 		DogCharacter->SetIsEating(true);
+		if (DogCharacter->GetMeatWidget())
+		{
+			DogCharacter->GetMeatWidget()->RemoveFromParent();
+			DogCharacter->SetMeatWidget(nullptr);
+		}
 		Actor->Destroy();
 	}
 }

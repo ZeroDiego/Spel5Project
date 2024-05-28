@@ -66,3 +66,13 @@ void UDogComponent::SetDogIsSleeping(const bool NewIsSleeping) const
 {
 	DogCharacter->SetIsSleeping(NewIsSleeping);
 }
+
+UUserWidget* UDogComponent::GetMeatWidget() const
+{
+	return DogCharacter->GetMeatWidget();
+}
+
+void UDogComponent::SetMeatWidget(UUserWidget* NewMeatWidget) const
+{
+	DogCharacter->SetMeatWidget(NewMeatWidget);
+}

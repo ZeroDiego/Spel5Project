@@ -56,6 +56,12 @@ public:
 	
 	UFUNCTION(BlueprintCallable)
 	void SetMover(UMover* NewMover);
+
+	UFUNCTION(BlueprintCallable)
+	UUserWidget* GetMeatWidget() const;
+	
+	UFUNCTION(BlueprintCallable)
+	void SetMeatWidget(UUserWidget* NewMeatWidget);
 	
 private:
 	UPROPERTY(VisibleAnywhere)
@@ -88,4 +94,7 @@ private:
 	FTimerHandle SleepTimer;
 
 	UMover* Mover;
+
+	UPROPERTY(EditAnywhere)
+	UUserWidget* MeatWidget;
 };
