@@ -25,9 +25,10 @@ void UDogTrigger::TickComponent(float DeltaTime, ELevelTick TickType, FActorComp
 	if (AActor* Actor = GetMeatActor(); Actor != nullptr)
 	{
 		DogCharacter->SetIsEating(true);
-		if (GEngine && GEngine->GameViewport)
+		if (DogCharacter->GetMeatWidget())
 		{
-			GEngine->GameViewport->RemoveAllViewportWidgets();
+			DogCharacter->GetMeatWidget()->RemoveFromParent();
+			DogCharacter->SetMeatWidget(nullptr);
 		}
 		Actor->Destroy();
 	}

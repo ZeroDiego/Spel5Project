@@ -92,3 +92,13 @@ void ADogCharacter::SetMover(UMover* NewMover)
 {
 	Mover = NewMover;
 }
+
+UUserWidget* ADogCharacter::GetMeatWidget() const
+{
+	return MeatWidget;
+}
+
+void ADogCharacter::SetMeatWidget(UUserWidget* NewMeatWidget)
+{
+	MeatWidget = NewMeatWidget;
+}
