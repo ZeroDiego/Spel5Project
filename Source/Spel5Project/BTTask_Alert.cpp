@@ -1,10 +1,12 @@
-// Diego Puentes Varas dipu6255
+// Fill out your copyright notice in the Description page of Project Settings.
+
 
 #include "BTTask_Alert.h"
 #include "AIController.h"
 #include "DogCharacter.h"
 #include "OwnerCharacter.h"
 #include "Engine.h"
+#include "OwnerAIController.h"
 #include "Logging/LogMacros.h"
 #include "BehaviorTree/BlackboardComponent.h"
 
@@ -29,7 +31,6 @@ EBTNodeResult::Type UBTTask_Alert::ExecuteTask(UBehaviorTreeComponent& OwnerComp
 	}
 
 	DogCharacter->Alert();
-	DogCharacter->SetIsBarking(true);
 
 	const UWorld* World = GetWorld();
 	for (TActorIterator<AOwnerCharacter> It(World); It; ++It)

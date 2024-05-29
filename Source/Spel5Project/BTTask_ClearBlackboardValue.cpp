@@ -1,9 +1,8 @@
-// Diego Puentes Varas dipu6255
+// Fill out your copyright notice in the Description page of Project Settings.
 
 
 #include "BTTask_ClearBlackboardValue.h"
 #include "AIController.h"
-#include "DogCharacter.h"
 #include "OwnerCharacter.h"
 #include "BehaviorTree/BlackboardComponent.h"
 
@@ -18,22 +17,17 @@ EBTNodeResult::Type UBTTask_ClearBlackboardValue::ExecuteTask(UBehaviorTreeCompo
 
 	OwnerComp.GetBlackboardComponent()->ClearValue(GetSelectedBlackboardKey());
 
-	if(ADogCharacter* DogCharacter = Cast<ADogCharacter>(OwnerComp.GetAIOwner()->GetPawn()))
-	{
-		if (GetSelectedBlackboardKey() == "IsBarking")
-			DogCharacter->SetIsBarking(false);
-		else if (GetSelectedBlackboardKey() == "IsSatisfied")
-			DogCharacter->SetIsSatisfied(false);
-		else if (GetSelectedBlackboardKey() == "IsEating")
-			DogCharacter->SetIsEating(false);
-	}
-
-	if (AOwnerCharacter* OwnerCharacter = Cast<AOwnerCharacter>(OwnerComp.GetAIOwner()->GetPawn()))
+	AOwnerCharacter* ControlledCharacter = Cast<AOwnerCharacter>(OwnerComp.GetAIOwner()->GetPawn());
+	if (ControlledCharacter)
 	{
 		if (GetSelectedBlackboardKey() == "LastKnownPlayerLocation")
-			OwnerCharacter->SetLastKnownPlayerLocation(FVector::ZeroVector);
+		{
+			ControlledCharacter->SetLastKnownPlayerLocation(FVector::ZeroVector);
+		}
 		else if (GetSelectedBlackboardKey() == "IsAlerted")
-			OwnerCharacter->SetIsAlerted(false);
+		{
+			ControlledCharacter->SetIsAlerted(false);
+		}
 	}
 	
 	return EBTNodeResult::Succeeded;

@@ -1,4 +1,4 @@
-// Diego Puentes Varas dipu6255
+// Fill out your copyright notice in the Description page of Project Settings.
 
 #include "DiegoGrabber.h"
 #include "Engine/World.h"
@@ -26,14 +26,17 @@ void UDiegoGrabber::BeginPlay()
 void UDiegoGrabber::TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction)
 {
 	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
+	
+	UPhysicsHandleComponent *HandleComponent = GetPhysicsHandle();
 
-	if (const UPhysicsHandleComponent *HandleComponent = GetPhysicsHandle(); HandleComponent && HandleComponent->GetGrabbedComponent() != nullptr)
+	if (HandleComponent && HandleComponent->GetGrabbedComponent() != nullptr)
 	{
-		if (UPrimitiveComponent* GrabbedComponent = Cast<UPrimitiveComponent>(HandleComponent->GetGrabbedComponent()))
+		UPrimitiveComponent* GrabbedComponent = Cast<UPrimitiveComponent>(HandleComponent->GetGrabbedComponent());
+		if (GrabbedComponent)
 		{
 			// Update the position of the grabbed actor to follow the grabber component
-			const FVector TargetLocation = GetComponentLocation() + GetForwardVector() * HoldDistance;
-			const FRotator TargetRotation = GetComponentRotation();
+			FVector TargetLocation = GetComponentLocation() + GetForwardVector() * HoldDistance;
+			FRotator TargetRotation = GetComponentRotation();
 
 			// Set the position and rotation of the grabbed actor
 			GrabbedComponent->SetWorldLocation(TargetLocation);
@@ -71,23 +74,23 @@ bool UDiegoGrabber::Grab()
 			// Store the original transform of the grabbed actor
 			FTransform OriginalTransform = HitActor->GetTransform();
 
-			// Disable physics simulation on the grabbed actor
+			// Disable physics simulation
 			HitComponent->SetSimulatePhysics(false);
 
-			// Detach the grabbed actor from its current parent
+			// Detach the actor from its current parent
 			HitActor->DetachFromActor(FDetachmentTransformRules::KeepWorldTransform);
 
-			// Attach the grabbed actor to this grabber component
+			// Attach the actor to the grabber component
 			HitComponent->AttachToComponent(this, FAttachmentTransformRules::SnapToTargetIncludingScale);
 
-			// Add tag to the grabbed actor to indicate it's being grabbed
+			// Add tag to indicate it's grabbed
 			HitActor->Tags.Add("Grabbed");
 
-			// Store the offset from this grabber component to the grabbed actor
+			// Store the offset from the grabber component to the grabbed actor
 			FVector Offset = OriginalTransform.GetLocation() - GetComponentLocation();
 			FRotator RotationOffset = (OriginalTransform.GetRotation().Rotator() - GetComponentRotation()).GetNormalized();
 
-			// Re-parent the grabbed actor to this grabber component
+			// Re-parent the actor
 			HitActor->AttachToComponent(this, FAttachmentTransformRules::KeepWorldTransform);
 			HitActor->SetActorRelativeLocation(Offset);
 			HitActor->SetActorRelativeRotation(RotationOffset);
@@ -113,11 +116,9 @@ UPhysicsHandleComponent* UDiegoGrabber::GetPhysicsHandle() const
 
 bool UDiegoGrabber::GetGrabableInReach(FHitResult &OutHit) const
 {
-	//Defines variables used to calculate the range of the grab.
 	const FVector Start = GetComponentLocation();
 	const FVector End = GetComponentLocation() + GetForwardVector() * MaxGrabDistance;
 
-	//Creates sphere which is used to check if anything is inside it. Returns true if something is.
 	const FCollisionShape Sphere = FCollisionShape::MakeSphere(GrabRadius);
 	return GetWorld()->SweepSingleByChannel(
 		OutHit,
