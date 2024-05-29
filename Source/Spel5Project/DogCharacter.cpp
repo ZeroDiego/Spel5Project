@@ -1,37 +1,40 @@
-// Fill out your copyright notice in the Description page of Project Settings.
-
+// Diego Puentes Varas dipu6255
 
 #include "DogCharacter.h"
-
 #include "Kismet/GameplayStatics.h"
 
-// Sets default values
 ADogCharacter::ADogCharacter()
 {
- 	// Set this character to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 
 }
 
-// Called when the game starts or when spawned
 void ADogCharacter::BeginPlay()
 {
 	Super::BeginPlay();
 	
 }
 
-// Called every frame
 void ADogCharacter::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
 }
 
-// Called to bind functionality to input
 void ADogCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 {
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
 
+}
+
+bool ADogCharacter::GetIsBarking() const
+{
+	return IsBarking;
+}
+
+void ADogCharacter::SetIsBarking(const bool NewIsBarking)
+{
+	IsBarking = NewIsBarking;
 }
 
 bool ADogCharacter::GetIsSatisfied() const
@@ -39,9 +42,30 @@ bool ADogCharacter::GetIsSatisfied() const
 	return IsSatisfied;
 }
 
-void ADogCharacter::SetSatisfied(const bool NewIsSatisfied)
+void ADogCharacter::SetIsSatisfied(const bool NewIsSatisfied)
 {
 	IsSatisfied = NewIsSatisfied;
+}
+
+bool ADogCharacter::GetIsEating() const
+{
+	return IsEating;
+}
+
+void ADogCharacter::SetIsEating(const bool NewIsEating)
+{
+	IsEating = NewIsEating;
+	UGameplayStatics::SpawnSoundAttached(EatSound, GetMesh(), TEXT("Eat"));
+}
+
+bool ADogCharacter::GetIsDoorOpen() const
+{
+	return IsDoorOpen;
+}
+
+void ADogCharacter::SetIsDoorOpen(const bool NewIsDoorOpen)
+{
+	IsDoorOpen = NewIsDoorOpen;
 }
 
 bool ADogCharacter::GetIsSleeping() const
@@ -54,20 +78,8 @@ void ADogCharacter::SetIsSleeping(const bool NewIsSleeping)
 	IsSleeping = NewIsSleeping;
 }
 
-bool ADogCharacter::GetHasEaten() const
+void ADogCharacter::Alert() const
 {
-	return HasEaten;
-}
-
-void ADogCharacter::SetHasEaten(const bool NewHasEaten)
-{
-	HasEaten = NewHasEaten;
-	UGameplayStatics::SpawnSoundAttached(EatSound, GetMesh(), TEXT("Eat"));
-}
-
-void ADogCharacter::Alert()
-{
-	IsAlert = true;
 	UGameplayStatics::SpawnSoundAttached(BarkSound, GetMesh(), TEXT("Bark"));
 }
 
@@ -79,4 +91,14 @@ UMover* ADogCharacter::GetMover() const
 void ADogCharacter::SetMover(UMover* NewMover)
 {
 	Mover = NewMover;
+}
+
+UUserWidget* ADogCharacter::GetMeatWidget() const
+{
+	return MeatWidget;
+}
+
+void ADogCharacter::SetMeatWidget(UUserWidget* NewMeatWidget)
+{
+	MeatWidget = NewMeatWidget;
 }

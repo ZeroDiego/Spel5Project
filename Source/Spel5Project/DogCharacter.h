@@ -1,4 +1,4 @@
-// Fill out your copyright notice in the Description page of Project Settings.
+// Diego Puentes Varas dipu6255
 
 #pragma once
 
@@ -10,65 +10,91 @@
 UCLASS()
 class SPEL5PROJECT_API ADogCharacter : public ACharacter
 {
-    GENERATED_BODY()
+	GENERATED_BODY()
 
 public:
-    // Sets default values for this character's properties
-    ADogCharacter();
+	// Sets default values for this character's properties
+	ADogCharacter();
 
 protected:
-    // Called when the game starts or when spawned
-    virtual void BeginPlay() override;
+	// Called when the game starts or when spawned
+	virtual void BeginPlay() override;
 
 public:
-    bool GetIsSatisfied() const;
+	UFUNCTION(BlueprintCallable)
+	bool GetIsBarking() const;
+	
+	void SetIsBarking(bool NewIsBarking);
+	
+	UFUNCTION(BlueprintCallable)
+	bool GetIsSatisfied() const;
+	
+	void SetIsSatisfied(bool NewIsSatisfied);
 
-    void SetSatisfied(bool NewIsSatisfied);
+	UFUNCTION(BlueprintCallable)
+	bool GetIsEating() const;
+	
+	void SetIsEating(bool NewIsEating);
 
-    bool GetIsSleeping() const;
+	UFUNCTION(BlueprintCallable)
+	bool GetIsDoorOpen() const;
+	
+	void SetIsDoorOpen(bool NewIsDoorOpen);
 
-    void SetIsSleeping(bool NewIsSleeping);
+	UFUNCTION(BlueprintCallable)
+	bool GetIsSleeping() const;
+	
+	void SetIsSleeping(bool NewIsSleeping);
 
-    bool GetHasEaten() const;
+	void Alert() const;
+	
+	virtual void Tick(float DeltaTime) override;
+	
+	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
-    void SetHasEaten(bool NewHasEaten);
+	UMover* GetMover() const;
+	
+	UFUNCTION(BlueprintCallable)
+	void SetMover(UMover* NewMover);
 
-    void Alert();
-
-    // Called every frame
-    virtual void Tick(float DeltaTime) override;
-
-    // Called to bind functionality to input
-    virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
-
-    UMover* GetMover() const;
-
-    UFUNCTION(BlueprintCallable)
-    void SetMover(UMover* NewMover);
-
+	UFUNCTION(BlueprintCallable)
+	UUserWidget* GetMeatWidget() const;
+	
+	UFUNCTION(BlueprintCallable)
+	void SetMeatWidget(UUserWidget* NewMeatWidget);
+	
 private:
-    UPROPERTY(VisibleAnywhere)
-    bool IsSatisfied;
+	UPROPERTY(VisibleAnywhere)
+	bool IsBarking;
+	
+	UPROPERTY(VisibleAnywhere)
+	bool IsSatisfied;
+	
+	UPROPERTY(VisibleAnywhere)
+	bool IsEating;
 
-    UPROPERTY(VisibleAnywhere)
-    bool IsSleeping;
+	UPROPERTY(VisibleAnywhere)
+	bool IsDoorOpen;
 
-    UPROPERTY(VisibleAnywhere)
-    bool HasEaten;
+	UPROPERTY(VisibleAnywhere)
+	bool IsSleeping;
 
-    UPROPERTY(VisibleAnywhere)
-    bool IsAlert;
+	UPROPERTY(VisibleAnywhere)
+	bool IsAlert;
+	
+	UPROPERTY(EditAnywhere)
+	float SleepDelay = 1;
+	
+	UPROPERTY(EditAnywhere)
+	USoundBase* BarkSound;
 
-    UPROPERTY(EditAnywhere)
-    float SleepDelay = 1;
+	UPROPERTY(EditAnywhere)
+	USoundBase* EatSound;
+	
+	FTimerHandle SleepTimer;
 
-    UPROPERTY(EditAnywhere)
-    USoundBase* BarkSound;
+	UMover* Mover;
 
-    UPROPERTY(EditAnywhere)
-    USoundBase* EatSound;
-
-    FTimerHandle SleepTimer;
-
-    UMover* Mover;
+	UPROPERTY(EditAnywhere)
+	UUserWidget* MeatWidget;
 };

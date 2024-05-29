@@ -35,4 +35,3 @@ EBTNodeResult::Type UBTTask_OpenDogWall::ExecuteTask(UBehaviorTreeComponent& Own
 	Mover->SetShouldMove(true);
 	return EBTNodeResult::Succeeded;
 }
-

@@ -13,7 +13,7 @@ class SPEL5PROJECT_API UDogComponent : public USceneComponent
 {
 	GENERATED_BODY()
 
-public:
+public:	
 	// Sets default values for this component's properties
 	UDogComponent();
 
@@ -34,12 +34,24 @@ public:
 	void SetDogIsSatisfied(const bool NewIsSatisfied) const;
 
 	UFUNCTION(BlueprintCallable)
+	bool GetDogIsEating() const;
+
+	UFUNCTION(BlueprintCallable)
+	void SetDogIsEating(const bool NewIsEating) const;
+
+	UFUNCTION(BlueprintCallable)
 	bool GetDogIsSleeping() const;
 
 	UFUNCTION(BlueprintCallable)
 	void SetDogIsSleeping(const bool NewIsSleeping) const;
 
+	UFUNCTION(BlueprintCallable)
+	UUserWidget* GetMeatWidget() const;
+	
+	UFUNCTION(BlueprintCallable)
+	void SetMeatWidget(UUserWidget* NewMeatWidget) const;
+	
 private:
 	ADogCharacter* DogCharacter;
-
+	
 };
